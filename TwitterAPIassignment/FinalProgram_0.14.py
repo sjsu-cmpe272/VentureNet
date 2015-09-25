@@ -6,6 +6,7 @@ import tkMessageBox
 import tkFont
 import pyglet
 
+#Keys for authorizing user account and accessing it
 CONSUMER_KEY = "5apF4IMmoot5NXjqFZtXcdYV2"
 CONSUMER_SECRET = "UqoWBwxk8BH3SO3fsmw5ypktCQJ2FajJOY464KfFDWwPCYpTWY"
 ACCESS_KEY = "3646310174-RVvCYmcd9cLOGBWRZFMz2VXjPjoESoG7e8hd5VS"
@@ -185,6 +186,10 @@ def reveal():
 	print "****Get text: ***"
 	print twittext.get
 
+def on_click(event):
+	sound = pyglet.media.load('birds007.wav')
+	sound.play()
+
 ###################################################################################################################################
 ## GUI interface Code: by Neelam,Ankit,Dvora,Manjeet
 app = Tk()
@@ -242,14 +247,14 @@ b7.pack(pady = 8, padx = 8)
 b8 = Button(f1, text='User Timeline', command = userTimeline,padx = 20)
 b8.pack(pady = 8, padx = 8)
 
-##Adding Images ## Code By Dvora
+##Adding Images
 image1=PhotoImage(file = 'bird3.gif')
 image2=PhotoImage(file = 'bird2.gif')
 img1 = Label(f2,image = image1,)
 img1.grid(rowspan=1,row = 5, columnspan=50,column = 10)
-img2 = Label(f3,image = image2)
+img2 = Button(f3,image = image2)
 img2.grid(rowspan=50,row = 50, columnspan=15,column = 15)
-# img2.pack(pady = 5, padx = 5)
+img2.bind('<Button-1>', on_click)
 
 def reveal():
 	print twittext.get
