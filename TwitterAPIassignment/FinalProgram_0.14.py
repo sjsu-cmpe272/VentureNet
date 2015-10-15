@@ -58,7 +58,7 @@ def twitTrend():
 	decoded = json.loads(data)
 	string = ""
 	for i in decoded:
-		#jenkins for trend in i["trends"]:
+		for trend in i["trends"]:
 			string = string + " - %s" % trend["name"].encode('utf8') + '\n\n'
  			
         tkMessageBox.showinfo("HotTwitt", string)
