@@ -1,0 +1,156 @@
+/**********************************************************************************************
+
+	Title: CSS
+	Author: Blake Hilscher
+	Date: 2010
+
+***********************************************************************************************
+
+/* 1. Home
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/	
+	
+.column{
+	float:left;
+}
+	.column.left{
+		width:180px;
+	}
+	.column.middle{
+		margin-left:18px;
+		width:456px;
+	}
+	.column.right{
+		float:right;
+		margin-left:18px;
+		width:300px;
+	}
+	
+	.content .border img.float_left{
+		float:left;
+		margin-right:10px;
+	}
+	
+	.content .border form input {
+		padding:2px;
+	}
+	
+	
+#loopedSlider {
+	position:relative;
+	overflow:hidden;
+	border-bottom:none;
+	width:454px;
+	height:242px;
+	margin-bottom:20px;
+	text-align:center;
+	font-weight:bold;
+	color:black;
+	background:#F5F5F5;
+	z-index:850;
+}
+	#loopedSlider .overlay{
+		z-index:900;
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:454px;
+		height:242px;
+	}
+	#loopedSlider .slides { 
+		position:absolute; 
+		top:0; 
+		left:0; 
+	}
+	#loopedSlider .slides > div { 
+		position:absolute; 
+		top:0; 
+		width:454px; 
+		display:none; 
+	}
+	#loopedSlider .slides div a.new_window{
+		text-indent:-9999px;
+		display:block;
+		position:absolute;
+		top:0px;
+		width:454px;
+		height:242px;
+		z-index:910;
+	}
+	#loopedSlider .container {
+		width:454px;
+		height:242px;
+		overflow:hidden;
+		position:relative;
+		cursor:pointer;
+	}	
+	#loopedSlider ul.pagination {
+		position:absolute;
+		top:212px;
+		right:15px;
+		margin:0;
+		height:20px;
+		padding:0;		
+		z-index:920;
+	}
+		#loopedSlider ul.pagination li { 
+			float:left; 
+			margin:0 3px; 
+		}
+		#loopedSlider ul.pagination li a.new_window{
+			position:absolute;
+			top:-212px;
+			left:-363px;			
+			padding:0px;
+			margin:0px;
+			display:block;			
+			width:0px;
+			height:0px;	
+			background-image:none;
+			overflow:hidden;
+			z-index:930;
+		}
+			#loopedSlider ul.pagination li.active a.new_window{
+				display:block;
+				width:454px;
+				height:212px;
+				background-image:none;
+			}		
+		#loopedSlider ul.pagination a { 
+			display:block; 
+			width:13px; 
+			padding-top:12px; 
+			height:0; 
+			overflow:hidden; 
+			background:url(../images/home/button-slider-inactive.png) top left no-repeat;
+			background-position:0 0; 
+			background-repeat:no-repeat;
+			z-index:940;
+		}
+			#loopedSlider ul.pagination li.active a {
+				background:url(../images/home/button-slider-active.png) top left no-repeat;
+			}
+
+#find_pet #distance_slider{
+	width:75%;
+}
+#find_pet #distance_display{
+	float:right;
+}
+
+#find_pet input.float_left{
+	margin-right:8px;
+}
+
+#find_pet label{
+	display:block;
+	font-size:11px;
+	margin-bottom:2px;
+	font-family:arial;
+	font-weight:bold;
+}
+
+#find_pet select{
+	font-size:11px;
+	width:145px;
+}

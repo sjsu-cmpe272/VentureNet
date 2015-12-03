@@ -1,0 +1,134 @@
+/* //////////////////////////////////////////////////////////////////////////////////////////
+General  orange = ed8524
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+body { font:14px/21px "museo-1","museo-2",serif; color:#333; }
+h2 { margin-bottom: 20px; font-size: 36px; color: #333; font-weight: 900; line-height: 36px; display: block; }
+h3 { font-size: 18px; color: #333; font-weight: 900; }
+h3.dark { background: #333; padding: 5px 10px; display: block; color: #FFF;}
+h3.dark-blog { background: #999999; padding: 5px 10px; display: block; color: #FFF;}
+h3.dark236 { background: #333; width: 236px; padding: 5px 10px; display: block; }
+h3.light { font-size: 18px; color: #333; font-weight: 900;  }
+h3.blue { background: #2ba9bd; padding: 5px 10px; display: block; color: #FFF;}
+h3.orange { background: #ff6600; padding: 5px 10px; display: block; color: #FFF;}
+h4 { font-size: 24px; color: #fff; font-weight: 900; }
+h5 { margin-top: 1.5em; font-size: 18px; font-weight: bold; }
+h6 { padding-bottom:5px; font:16px "museo-1","museo-2",serif; color: #2ba9bd; font-weight: bold; }
+h7 { margin-bottom: 15px; font:30px "museo-1","museo-2",serif; color: #a9b93c; font-weight: 900; line-height: 36px; display: block; }
+h7.black { margin-bottom: 15px; font:30px "museo-1","museo-2",serif; color: #333; font-weight: 900; line-height: 36px; display: block; }
+h7.green { margin-bottom: 15px; font:30px "museo-1","museo-2",serif; color: #a9b93c; font-weight: 900; line-height: 36px; display: block; }
+h7.orange { margin-bottom: 15px; font:30px "museo-1","museo-2",serif; color: #f68428; font-weight: 900; line-height: 36px; display: block; }
+h7.blue { margin-bottom: 15px; font:30px "museo-1","museo-2",serif; color: #2ba9bd; font-weight: 900; line-height: 36px; display: block; }
+h7.brown { margin-bottom: 15px; font:30px "museo-1","museo-2",serif; color: #663700; font-weight: 900; line-height: 36px; display: block; }
+h7.grey { margin-bottom: 15px; font:30px "museo-1","museo-2",serif; color: #e9e8e8; font-weight: 900; line-height: 36px; display: block; }
+h8 { font:15px "museo-1","museo-2",serif; color: #333; font-weight: 900; display: block;}
+h9 { font:24px "museo-1","museo-2",serif; color: #2ba9bd; font-weight: 900; display: block;}
+p { margin: 14px 0; }
+a { color: #2ba9bd; text-decoration:none; }
+a:hover { color: #16535b; }
+a.btn { font:18px/21px "museo-1","museo-2";,serif; color: #fff; text-align: center; font-weight: 900; text-decoration:none; }
+a.btn2 { font:18px/21px "museo-1","museo-2";,serif; color: #fff; text-align: center; font-weight: 900; text-decoration:none; }
+a.smbtn {  color: #fff; text-align: center; font-weight: 900; }
+a.btn-search-findapet { font:16px/18px "museo-1","museo-2";,serif; color: #fff; text-align: center; font-weight: 900; text-decoration:none; }
+a.btn-moredetails { font:12px/14px "museo-1","museo-2";,serif; color: #fff; text-align: center; font-weight: 900; text-decoration:none; }
+a.btn-ssr_search { font:18px/21px "museo-1","museo-2";,serif; color: #fff; text-align: center; font-weight: 900; text-decoration:none; }
+a.btn-blg-search { font:16px/18px "museo-1","museo-2";,serif; color: #fff; text-align: center; font-weight: 900; text-decoration:none; }
+a.btn-blg-read-more { font:13px "arial";,serif; color: #fff; text-align: center; font-weight: normal; text-decoration:none; text-transform:uppercase; }
+a.btn-signup { font:16px/18px "museo-1","museo-2";,serif; color: #fff; text-align: center; font-weight: 900; text-decoration:none; }
+.legal { font:11px/13px "museo-1","museo-2",serif; color:#888; }
+.error { font: 14px; color: #fff; font-weight: 900; line-height: 18px; }
+.advanced { font:14px; "museo-1","museo-2",serif; color:#888; }
+
+
+a#order-summary { color: #fff; }
+.req { color: #ff008a; }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Header
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+h1 a { float: left; background: url(../assets/images/layout/logo.png); width: 419px; height: 96px; margin: 12px 0 0 0; display: block; text-indent: -9999px; overflow: hidden; }
+
+.nav { font: 14px/28px "museo-1","museo-2",serif; font-weight: bold; }
+
+.list-header { font-size: 12px; font-weight: 900; color: #fff; }
+.list-header a { padding: 0 10px; color: #fff; font: 14px "museo-1","museo-2",serif; font-weight: bold; text-decoration:none; }
+.list-header a:hover { background: #2ba9bd; padding: 4px 10px; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+.list-header .tagline { color: #ffc619; font: 14px "museo-1","museo-2",serif; font-weight: bold;}
+.list-header li { font: 14px "museo-1","museo-2",serif; font-weight: bold; text-decoration:none; }
+	
+.simpleTooltip { font: 11px/18px "museo-1","museo-2",serif; color:#333; }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Main Content 
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.search { font-size: 18px; color: #333; font-weight: 700; }
+.search h1 { font: 20px "museo-1","museo-2",serif; color: #333; font-weight: 700; }
+.search-title { font: 18px "museo-1","museo-2",serif; color: #333; font-weight: 900; padding: 4px 0; }
+.search-advanced { font: 16px "museo-1","museo-2",serif; color: #2ba9bd; font-weight: 700; padding: 4px 0; }
+.search-advanced a { color: #333; text-decoration:none; }
+.search-advanced a:hover { color: #2ba9bd; text-decoration:none; }
+.pagination { font: 11px Verdana, Arial, Helvetica, sans-serif; }
+.pagination .active a { color: #fff; }
+
+.list-product li { margin-bottom: 6px; line-height:16px; }
+.price-list { font-weight: bold; color: #aaa; }
+.price-our { font-weight: bold; color: #333; }
+.price-saving { padding-bottom: 14px; font-weight: bold; color: #ff008a; }
+
+.advice-header { font: 18px/22px "museo-1","museo-2",serif; font-weight: bold; }
+
+.list-product-header { font-weight: bold; }
+.quantity label { font-weight: bold; }
+.list-product-details { font-weight: 900; }
+.list-product-details a.active { color: #333; }
+
+.review-rating { font-weight: bold; }
+.review p { margin: 10px 0; }
+
+.list-note .date { font-weight: bold; }
+
+.label li p{ margin: 14px 0; font-size: 14px "museo-1","museo-2",serif; color:#333; }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Utilities 
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.box236, .box216 { font-size: 12px; line-height: 18px; }
+.box236 a, .box216 a { font-weight: bold; }
+.list-summary { font-size: 11px; line-height: 14px; }
+.list-summary a { font-weight: normal; }
+.list-summary .total { font-size: 12px; font-weight: bold; }
+.list-sum .total { font-weight: bold; }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Footer 
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.list-footer { font:"museo-1","museo-2",serif; font-size: 12px; text-decoration:none; }
+.list-footer a{ font:"museo-1","museo-2",serif; font-size: 12px; text-decoration:none; }
+.list-footer .category { font: 14px/28px "museo-1","museo-2",serif; font-weight: bold; }
+.list-newsletter { font: 14px/28px "museo-1","museo-2",serif; font-weight: bold; }
+.list-footer .contact { font: 11px "museo-1","museo-2",serif; text-decoration:none; color:#888; }
+.list-footer .contact a { font: 11px "museo-1","museo-2",serif; text-decoration:none; }
+
+	
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Forms
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+#input-search { font-size: 15px; font:"museo-1","museo-2",serif; color:#888;}
+#input-newsletter-signup { font-size: 15px; font:"museo-1","museo-2",serif; color:#888;}
+#input-zip { font-size: 15px; font:"museo-1","museo-2",serif; color:#888; padding: 3px;}
+#sortbar-animaltype { font-size: 15px; font:"museo-1","museo-2",serif; color:#888;}
+#sortbar-breedtype { font-size: 15px; font:"museo-1","museo-2",serif; color:#888;}

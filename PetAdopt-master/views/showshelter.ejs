@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="https://rawgit.com/ghostbar/angular-file-model/master/angular-file-model.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
+  
+  <style>
+  
+  .list-header{
+  background-image: -webkit-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: -moz-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: -ms-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: -o-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: linear-gradient(top, #80D8EE, #38BDE0);
+  color: white;
+  }
+  
+      body{
+    font-family:  'Lucida Grande/Tahoma', Helvetica/Roboto;
+}
+.logo i {
+    font-size: 31px;
+    margin-right: 4px;
+    word-spacing: 14px;
+}
+.logo{
+    color: #F68428;
+    margin: 0;
+    font-size: 31px;
+    padding: 4px 0;
+    padding-bottom: 15px;
+
+}
+.login-bottom-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color:#9DACCB;
+    line-height: 19px;
+}
+
+header{
+    background: #3b5998;
+    padding-top: 20px;
+}
+header .form-group{
+    margin-bottom: 0px;
+}
+header .btn-header-login{
+    margin-bottom: 15px;    
+}
+.login-text {
+  
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  
+  border: solid #70D2EB  1px;
+  width:250px;
+  height:29px;
+}
+
+.search-text {
+  
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  
+  border: solid #70D2EB  1px;
+  width:180px;
+  height:29px;
+}
+
+.login-btn {
+margin: -4px 0px 0px 20px;
+padding: 1px 0px 1px 0px;
+   background: #70D2EB;
+  background-image: -webkit-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: -moz-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: -ms-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: -o-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: linear-gradient(to bottom, #70D2EB, #70D2EB);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 6px;
+  text-shadow: 0px 1px 0px #898a88;
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  border: solid #1d2a5b  1px;
+  width:160px;
+  height:29px;
+}
+.login-btn:hover {
+  background: #637BAD;
+  background-image: -webkit-linear-gradient(top, #637BAD, #5973A8);
+  background-image: -moz-linear-gradient(top, #637BAD, #5973A8);
+  background-image: -ms-linear-gradient(top, #637BAD, #5973A8);
+  background-image: -o-linear-gradient(top, #637BAD, #5973A8);
+  background-image: linear-gradient(to bottom, #637BAD, #5973A8);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 6px;
+  text-shadow: 0px 1px 0px #898a88;
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  font-family: Arial;
+  color: #f3ffff;
+  font-size: 13px;
+  
+  border: solid #1d2a5b  1px;
+  text-decoration: none;
+}
+.login-main{
+    margin-top: 130px;
+}
+.multibox{
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+.login-main span{
+    font-size: 12px;
+} 
+#wrap{
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+strong{
+    color:#141823;
+    font-size:25px;
+    font-weight:bold;
+}
+.signup-btn {
+  background: #79bc64;
+  background-image: -webkit-linear-gradient(top, #79bc64, #578843);
+  background-image: -moz-linear-gradient(top, #79bc64, #578843);
+  background-image: -ms-linear-gradient(top, #79bc64, #578843);
+  background-image: -o-linear-gradient(top, #79bc64, #578843);
+  background-image: linear-gradient(to bottom, #79bc64, #578843);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  text-shadow: 0px 1px 0px #898a88;
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  font-family: Arial;
+  color: #f3ffff;
+  font-size: 13px;
+  padding: 10px 20px 10px 20px;
+  border: solid #3b6e22  1px;
+  text-decoration: none;
+  width:250px;
+  height:35px;
+  }
+
+
+.signup-btn:hover {
+  background: #79bc64;
+  background-image: -webkit-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -moz-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -ms-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -o-linear-gradient(top, #79bc64, #5e7056);
+  background-image: linear-gradient(to bottom, #79bc64, #5e7056);
+  text-decoration: none;
+ 
+}
+.navbar-default .navbar-brand{
+        color:#fff;
+        font-size:30px;
+        font-weight:bold;
+    }
+.form .form-control { margin-bottom: 10px; }
+@media (min-width:768px) {
+    #home{
+        margin-top:50px;
+    }
+    #home .slogan{
+        color: #0e385f;
+        line-height: 29px;
+        font-weight:bold;
+    }
+}
+
+footer hr{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.footer-options ul{
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-options ul li{
+    float:left;
+    list-style: none;
+    padding: 5px;
+    font-size: 12px;
+}
+.footer-options ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.copyrights{
+    margin-top: 25px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+HEADER
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.header {
+	/*background: url(../images/layout/bg-header-top.jpg) 0 32px no-repeat;*/
+	height: 150px;
+}
+.list-header {
+	
+	width: 100%;
+	height: 23px;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+.list-header li {
+	float: right;
+	display: inline;
+	margin: 4px 20px 0 0;
+}
+.list-header .tagline {
+	float: left;
+	margin: 4px 0 0 30px;
+	padding: 0 0 15px 0;
+}
+.header h1 {
+	float: left;
+	/* background: url(../images/2015/logo.png) no-repeat; */
+	width: 245px;
+	height: 110px;
+	text-indent: -200px;
+	margin: 37px 0 0 0;
+}
+.nav {
+	margin: 0;
+	padding: 0;
+	height: 1em;
+}
+.header .nav {
+	float: right;
+	margin: 35px 0px 0 0;
+}
+.header .nav li {
+	list-style: none;
+	float: left;
+	font-size: 19px;
+}
+.header .nav li a {
+	display: block;
+	padding: 10px 13px;
+	color: #2ba9bd;
+	text-decoration: none;
+}
+.header .nav li ul {
+	display: none;
+	width: 11em; /*width to help Opera out*/
+	background-color: #2ba9bd;
+}
+.header .nav li:hover ul, .header .nav li.hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 2000;
+}
+.header .nav li ul li a {
+	font-size: 14px !important;	
+}
+.header .nav li:hover li, .header .nav li.hover li {
+	float: none;
+}
+.header .nav li:hover li a, .header .nav li:hover li a {
+	background-color: #2ba9bd;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.header .nav li li a:hover {
+	background-color: #16535b;
+}
+
+.wrap-main {
+	width: 1004px;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.mainpage {
+	background-image: -webkit-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: -moz-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: -ms-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: -o-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: linear-gradient(top, #E5E5E5, #FFFFFF);
+}
+
+.search {	
+	margin: 0 0 0 0;
+	padding: 0 0 0 100px;
+}
+
+.petdet {	
+	margin: 0 0 0 0;
+	padding: 0 0 0 5px;
+	background: #ffffff;
+}
+
+.sidebar {	
+	margin: 8px 0 0 0;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+.container-fluid{
+padding: 0 0 0 0;
+}
+  </style>
+  </head>
+  
+<body>
+	<div  ng-app="PetAdopt"  data-ng-controller="shelterctrl">
+		<div class="container-fluid">
+  		<!--/////////////////////////////////////HEADER///////////////////////////////////////////-->
+			<div class="header">
+				<ul class="list-header">
+					<li class="tagline">Search Pets. Adopt Pets. Save Pets.</li>
+                </ul>
+
+				<div class="row">
+					<h1>Pet Adopt</h1>
+					<div class="col-md-6">
+						<div class="row">
+							<ul class="nav">
+                				<li><a  href="#">ABOUT</a></li>
+				                <li><a  href="#">PROTECT</a>
+                					<ul>
+                            			<li><a href="#">Pet Insurance</a></li>
+                            			<li><a href="#">Lost Pet Recovery Services </a></li>
+									</ul>
+								</li>
+				                <li><a  href="#">BLOG</a>
+                					<ul>
+                        				<li><a href="#">Health, Behavior, and Other Tips</a></li>
+									</ul>
+								</li>
+								<li><a  href="#">LOOK</a></li>
+					            <li><a  href="#"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+                					<ul>
+                						<li><a role="button"  ng-model="selected" href="" ng-click="ownpet()">Own Pets</a></li>
+                        				<li><a role="button"  ng-model="selected" href="" ng-click="newreq()">New Requests</a></li>
+                        				<li><a role="button"  ng-model="selected" href="" ng-click="logout()">Logout</a></li>
+									</ul>
+								</li>     
+				           
+            				</ul>
+            			</div> 
+			        </div>
+   			 	</div>
+        </div><!--end header-->
+<!--/////////////////////////////////////HEADER///////////////////////////////////////////-->
+
+<div class="row" style="background:#70D2EB;"><div class="col-md-1"></div></div>
+<div class="row mainpage">
+	<div class="row col-md-12 search" ng-show=true><br></div>
+	<div class="col-md-1"></div>
+			  	
+	<div class="col-md-7 container" style="background:#ffffff;">
+   		<div class="" ng-show="ownpet1">
+    		<br>
+    		<div class="row">
+  				<div class="col-sm-6 col-md-4" ng-repeat="id1 in details">
+    				<div class="thumbnail">
+					    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    						<div class="carousel-inner">
+        						<div class="item active">
+              						<img class="img-rounded" style="height:180px;width:180px;margin: 0 0 0 17px" src="/images/{{id1.p_image_name}}"/>
+           							<div style="color:black;font-size: 31px;" class="carousel-caption" ng-hide={{id1.p_status}}>
+           							Adopted!
+           							</div>
+        						</div>
+    						</div>
+						</div>
+      					<div class="caption">
+        					<h3 class="text-center">{{id1.p_name}}</h3>
+        					<p class="text-center">{{id1.p_breed}}</p>
+      					</div>
+    				</div>
+  				</div>
+			</div>
+		</div>
+        	
+   		<div class="" ng-show="newreq1">
+    		<br>
+    		<div class="row">
+  				<div class="col-sm-6 col-md-4" ng-repeat="id1 in details1">
+    				<div class="thumbnail"> 
+					    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    						<div class="carousel-inner">
+        						<div class="item active"> 
+              						<a role="button"  ng-model="selected" href="" ng-click="moredet(id1)"><img class="img-rounded" style="height:180px;width:180px;" src="/images/{{id1.p_image_name}}"/>
+              							<div style="color:red;font-size: 15px;" class="carousel-caption" ng-show={{id1.sl_notified}}>
+           									Meeting Scheduled!
+           								</div>
+              						</a>	
+        						</div>
+    						</div>
+						</div>
+						<div class="caption">
+							<h3 class="text-center">{{id1.p_name}}</h3>
+						    <p class="text-center">{{id1.ad_fname}} {{id1.ad_lname}}</p>
+						    <p class="text-center">wants to adopt this.</p>
+						</div>
+    				</div>
+			  	</div>
+			</div>
+    	</div>
+        	
+  		<div class="" ng-show="moredetshow">
+        	<br>
+        	<div ng-repeat="id2 in details2">
+        		<div class="row">
+        			<div class="media col-md-5">
+			  			<div class="media-left">
+			      			<img class="media-object" style="border: solid #70D2EB  1px; height:200px;" src="/images/{{id2.p_image_name}}" alt="...">
+			  			</div>
+					</div>
+        			<div class="row">
+        				<div class="col-md-3">
+	        				<label>   PET   </label><br>
+        					<label>Name: {{id2.p_name}}</label><br>
+        					<label>Breed: {{id2.p_breed}}</label><br>
+        					<label>Gender: {{id2.p_gender}}</label><br>
+        					<label>Height: {{id2.p_height}} cms</label><br>
+        					<label>Weight: {{id2.p_weight}} lbs</label><br><br>
+						</div>
+			
+						<div class="col-md-3">
+							<label>   ADOPTOR   </label><br>
+			        		<label>Name: {{id2.ad_fname}} {{id2.ad_lname}}</label><br>
+			        		<label>Contact: {{id2.ad_contact}}</label><br>
+			        		<label>Address: {{id2.ad_address}}</label><br>
+			        		<form name="decision" ng-model="decision" novalidate>
+        						<input type="text" name="accept" ng-model="accept" ng-init="accept='false'" ng-hide="true">
+								<input type="submit" ng-click="dec(accept,id2)"  value="Adopted" class="btn btn-default btn-primary" style="width:100%">
+							</form>
+						</div>
+						<div class="col-md-6">
+						<form name="decision" ng-model="decision" novalidate>
+		     				<button ng-click="toggleModal('Cancel')" class="btn btn-default btn-success" style="width:48%">Schedule Meeting</button>
+		     				
+        						<!-- <input type="text" name="reject" ng-model="reject" ng-init="reject='true'" ng-hide="true">
+								<input type="submit" ng-click="dec(reject)"  value="Reject" class="btn btn-default btn-danger" style="width:48%"> -->
+							</form>
+			  			</div>
+						  <modal visible="showModal">
+						  		<form name="meet_form" ng-model="meet_form" enctype="multipart/form-data" class="form-horizontal" novalidate style="padding:0 0 0 50px">
+			     				
+			     				<div class="form-group">				
+					 				<input type="date" name="mt_date" ng-model="mt_date" class="login-text" style="width:250px;margin:0 0 0 120px;" required><br>					
+					           	</div>
+						  
+						  		<div class="form-group">				
+					 				<input type="time" name="mt_time" ng-model="mt_time" class="login-text" style="width:250px;margin:0 0 0 120px;" required><br>			
+					           	</div>
+								<div class="row">
+									<input type="text" ng-model="mt_ad_fname" name="mt_ad_fname" value={{id2.ad_fname}} ng-hide="true">
+									<input type="text" ng-model="mt_ad_emailid" name="mt_ad_emailid" value={{id2.ad_emailid}} ng-hide="true">
+									<input type="text" ng-model="mt_sh_emailid" name="mt_sh_emailid" value={{id2.sh_emailid}} ng-hide="true">
+			           				<input type="submit" value="Send Mail" ng-click="sendmail(mt_date,mt_time,id2)" class="btn btn-primary login-btn" style="width:250px;margin:0 0 0 120px;" name="Submit">
+			         			</div>
+						      </form>
+						 </modal>
+					</div>
+				</div>
+				<div class="row">
+        			<label style="padding:0 0 0 5px"><br>{{id2.p_description}}</label><br>
+        		</div>
+        	</div>
+        </div>    	
+</div>
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+
+
+     	<div class="container col-md-3 sidebar">
+
+			 	<div class="ng-hide" ng-show="shwelcome">
+             			<h1 style="text-align:center">Welcome {{username}}!</h1>
+             			<form name="sh_welcome" class="form-horizontal" ng-model="sh_welcome" novalidate style="padding:0 0 0 50px">
+             			<div class="row">			
+           					<input type="submit" class="btn btn-primary login-btn" value="New Pet" name="newpet" ng-click="new_pet()">
+         				</div>
+             			</form>
+              	</div>
+              	
+              	
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+
+				<!-- Sign Up form for Shelter -->
+				<div  class="ng-hide" ng-show="pt_detail">
+               		<h1 style="text-align:center">Welcome {{username}}!</h1>
+ 					<form name="pet_form" action="/petinsert" method="post" enctype="multipart/form-data" class="form-horizontal" novalidate style="padding:0 0 0 50px">
+     				
+     				<div class="form-group">				
+		 				<input type="text" name="pt_name" ng-model="pt_name" maxlength="15" placeholder="Pet Name" class="login-text" ng-change="petdisabled()" required><br>
+						<span style="color:red" ng-show="pet_form.pt_name.$dirty && pet_form.pt_name.$invalid">
+						<span ng-show="pet_form.pt_name.$error.required">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Name is required.
+						</span>
+						</span>
+						</span>
+		           	</div>
+     				
+					<div class="form-group">				
+		 				<input type="text" name="pt_type" ng-model="pt_type" maxlength="10" placeholder="Pet type Dog/Cat" class="login-text" ng-change="petdisabled()" required><br>
+						<span style="color:red" ng-show="pet_form.pt_type.$dirty && pet_form.pt_type.$invalid">
+						<span ng-show="pet_form.pt_type.$error.required">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Type is required.
+						</span>
+						</span>
+						</span>
+		           	</div>
+     				
+     				<div class="form-group">				
+		 				<input type="text" name="pt_color" ng-model="pt_color" maxlength="10" placeholder="Pet Color" class="login-text" ng-change="petdisabled()" required><br>
+						<span style="color:red" ng-show="pet_form.pt_color.$dirty && pet_form.pt_color.$invalid">
+						<span ng-show="pet_form.pt_color.$error.required">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Color is required.
+						</span>
+						</span>
+						</span>
+		           	</div>
+
+					<div class="form-group">				
+		 				<input type="number" name="pt_height" ng-model="pt_height" ng-maxlength="3" placeholder="Pet Height" class="login-text" ng-change="petdisabled()" required>.cms<br>
+						<span style="color:red" ng-show="pet_form.pt_height.$dirty && pet_form.pt_height.$invalid">
+						<span ng-show="pet_form.pt_height.$error.required">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Height is required.
+						</span>
+						<span ng-show="pet_form.pt_height.$error.maxlength">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Height should be in cms.
+						</span>
+						</span>
+					
+		           	</div>
+		           	
+		           	<div class="form-group">				
+		 				<input type="number" name="pt_weight" ng-model="pt_weight" ng-maxlength="3" placeholder="Pet Weight" class="login-text" ng-change="petdisabled()" required>.lbs<br>
+						<span style="color:red" ng-show="pet_form.pt_weight.$dirty && pet_form.pt_weight.$invalid">
+						<span ng-show="pet_form.pt_weight.$error.required">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Weight is required.
+						</span>
+						<span ng-show="pet_form.pt_weight.$error.maxlength">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Weight should be in lbs.
+						</span>
+						</span>
+			
+		           	</div>
+        
+                   <div class="form-group">				
+		 				<input type="text" name="pt_breed" ng-model="pt_breed" maxlength="30" placeholder="Pet Breed" class="login-text" ng-change="petdisabled()" required><br>
+						<span style="color:red" ng-show="pet_form.pt_breed.$dirty && pet_form.pt_breed.$invalid">
+						<span ng-show="pet_form.pt_breed.$error.required">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Breed is required.
+						</span>
+						</span>
+						</span>
+		           	</div>
+		           	
+		           	<div class="form-group">				
+		 				<input type="text" name="pt_gender" ng-model="pt_gender" maxlength="6" placeholder="Pet Gender" class="login-text" ng-change="petdisabled()" required><br>
+						<span style="color:red" ng-show="pet_form.pt_gender.$dirty && pet_form.pt_gender.$invalid">
+						<span ng-show="pet_form.pt_gender.$error.required">
+						<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+						<span class="sr-only">Error:</span>
+						Pet Gender is required.
+						</span>
+						</span>
+						</span>
+		           	</div>
+
+		           	<div class="form-group">			
+		           	<textarea ng-model="pt_desc" name="pt_desc" class="login-text" placeholder="Pet Description"></textarea>	
+		           	</div>
+		           	
+					
+					<input type="text" name="sh_pt_email" value={{sh_ret_email}} ng-hide="true">
+					<input type="file" file-model="pt_file" name="pt_file" style="margin:0 0 0 -15px;">
+					
+					<div class="row">		
+					<br>	
+           				<input type="submit" class="btn btn-primary login-btn" style="width:250px;margin:0 0 0 5px;" value="Submit" name="Submit" ng-disabled="ptinsrt">
+         			</div>
+         	
+					</form>
+				</div>
+			</div>      
+			
+			<div class="col-md-1"></div> 
+			
+				
+        	
+		</div>	  
+		
+		</div>      
+		<div class="col-md-1"></div>
+		    <footer class="container">
+<hr>
+<div class="footer-options">
+<ul >
+    <li><a href="#">Mobile</li>
+    <li><a href="#">Find Friends</li>
+    <li><a href="#">Badges</li>
+    <li><a href="#">People</li>
+    <li><a href="#">Pages</li>
+    <li><a href="#">Places</a></li>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">About</a></li>
+</ul>
+</div>
+<div style="clear:both"></div>
+<small class="copyrights"> © Copyrights reserved  2015</small>
+</footer>
+
+
+        		
+  <!-- <td><button href="" ng-click="showmail()" ng-disabled="adupsub"><span style="font-size:2.5em; padding: 15px;" class="glyphicon glyphicon-envelope"></span></button></td> -->
+  				
+    </div>
+    </body>
+
+
+
+<script>
+
+
+var app = angular.module('PetAdopt', []);
+
+		
+		app.controller('shelterctrl', function ($scope,$http,$window,$filter) 
+	{
+			
+			$scope.ptinsrt = true;
+			$scope.adupsub = false;
+			$scope.ownpet1=true;
+			$scope.newreq1=false;
+			$scope.showModal = false;
+		    $scope.buttonClicked = "";
+		    $scope.moredetshow=false;
+		    
+		    
+		    $scope.toggleModal = function(btnClicked){
+		        $scope.buttonClicked = btnClicked;
+		        $scope.showModal = !$scope.showModal;
+		    };
+		    
+		    
+			$http({
+      	  		method: 'GET',
+      	 		url: '/checkLogin'
+        	 }).
+        	then(function(response)
+        	{
+        	  	if (response.data.status == 200)
+					{
+        	  			if(response.data.type === 'AD')
+        	  				{
+	        	 				$scope.username=response.data.name;
+	        	 				$scope.ad_ret_email=response.data.mail;
+	        	 				$scope.main=true;
+	        	 				$scope.adwelcome=true;
+        	  				}
+        	  			else
+        	  				{
+        	  					$scope.username=response.data.name;
+        	  					$scope.sh_ret_email=response.data.mail;
+        	 					$scope.shwelcome=true;	 
+        	 					$http({
+        	 		      	  		method: 'POST',
+        	 		      	 		url: '/shelterpet',
+        	 		      	 	    data: {"sh_email":$scope.sh_ret_email}
+        	 		        	 }).
+        	 		        	then(function(response)
+        	 		        	{
+        	 		        	  	if (response.data.status == 200)
+        	 							{
+        	 		        	  		$scope.details=angular.fromJson(response.data.result); 
+        	 			        	 	 }        	  	
+        	 		        	 });
+        	  				}
+					}
+        	 });
+			
+			$scope.new_pet = function (){
+				$scope.shwelcome = false;
+				$scope.pt_detail = true;  	
+			};
+			
+			$scope.newreq = function (){
+				
+				
+				$http({
+		      	  		method: 'POST',
+		      	 		url: '/newreq',
+		      	 	    data: {"sh_email":$scope.sh_ret_email}
+				//	    params: { "sh_email":$scope.sh_ret_email }
+		        	 }).
+		        	then(function(response)
+		        	{ 			
+		        	  	if (response.data.status1 == 200)
+ 							{
+ 		        	  		$scope.details1=angular.fromJson(response.data.result1);
+ 		        	  		$scope.ownpet1 = false;
+ 		   					$scope.moredetshow = false;
+ 		   					$scope.newreq1 = true; 		
+ 							}
+		        	  	else
+		        	  		{
+		        	  		alert("There are no new requests as of now.")
+		        	  		}
+						       	  	
+		        	 });
+			};
+			
+			$scope.ownpet = function (){
+				$scope.ownpet1 = true;
+				$scope.newreq1 = false; 	
+				$scope.moredetshow = false;
+			};
+			
+			$scope.logout = function (){
+				
+				$http({
+		      	  		method: 'POST',
+		      	 		url: '/logout',
+		        	 }).
+		        	then(function(response)
+		        	{
+		        		$window.location.href = '/';
+		        	})
+
+			};
+			
+			$scope.petdisabled = function()
+			{
+				if($scope.pet_form.pt_name.$dirty && $scope.pet_form.pt_name.$valid)
+					{
+					if($scope.pet_form.pt_type.$dirty && $scope.pet_form.pt_type.$valid)
+						{
+						if($scope.pet_form.pt_color.$dirty && $scope.pet_form.pt_color.$valid)
+							{
+							if($scope.pet_form.pt_height.$dirty && $scope.pet_form.pt_height.$valid)
+								{
+								if($scope.pet_form.pt_weight.$dirty && $scope.pet_form.pt_weight.$valid)
+									{
+									if($scope.pet_form.pt_breed.$dirty && $scope.pet_form.pt_breed.$valid)
+										{
+										if($scope.pet_form.pt_gender.$dirty && $scope.pet_form.pt_gender.$valid)
+											{
+											$scope.ptinsrt = false;
+											}
+										}
+									}
+								}
+							}
+						}	
+					else
+						{
+						$scope.ptinsrt = true;
+						}
+					}
+			};
+			
+			$scope.sendmail = function(d1,t1,id2)
+			{
+
+				var dt = $filter('date')(new Date(d1), 'MM/dd/yyyy');
+				var tm = $filter('date')(new Date(t1), 'HH:mm');
+ 				var adfn = id2["ad_fname"];
+				var adml = id2["ad_emailid"];
+				var shml = id2["sh_emailid"];
+				var pid = id2["p_id"];
+ 	  		 	$http({
+			      	  method: 'POST',
+			      	  url: '/sendmail',
+			      	  data: {"date":dt,"time":tm,"adfnm":adfn,"admld":adml,"shmld":shml,"pid":pid}
+			        }).
+			          then(function(response) {
+			        	  	alert("Meeting has been scheduled.");
+			        	  	$window.location.href = '/showshelter';
+			          }); 	 
+			};
+			
+			$scope.moredet = function (id1){
+				//alert("In more details function");
+	  			//alert(id1["p_id"]);
+	  			var id2 = id1["p_id"];
+	  			$http({
+			      	  method: 'POST',
+			      	  url: '/shmorepetdet',
+			      	  data: {"id3":id2}
+			        }).
+			          then(function(response) {
+			        	  if (response.data.status == 200)
+							{
+			        		  $scope.newreq1=false;
+			        		  $scope.moredetshow=true;
+			        		  $scope.details2=angular.fromJson(response.data.result);
+		        	  		var details=angular.fromJson(response.data.result);
+		        	  			for (var i=0; i<response.data.l; i++){
+		        	  				$scope.id=details[i]["p_id"];
+			        	 	 	}
+							}
+								
+			          }); 
+			};
+
+			$scope.dec = function (ac,id2){
+			//alert(ac);
+			var pid = id2["p_id"];
+			var adml = id2["ad_emailid"];
+ 	  			$http({
+			      	  method: 'POST',
+			      	  url: '/decide',
+			      	  data: {"ac":ac,"pid":pid,"adml":adml}
+			        }).
+			          then(function(response) {
+			        	  if (response.data.status == 200)
+							{
+							$window.location.href = '/showshelter';
+							}
+								
+			          });  
+			};
+			
+			
+});
+		
+		app.directive('modal', function () {
+		    return {
+		      template: '<div class="modal fade">' + 
+		          '<div class="modal-dialog">' + 
+		            '<div class="modal-content">' + 
+		              '<div class="modal-header">' + 
+		                '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' + 
+		                '<h4 class="modal-title">Meeting Details!!</h4>' + 
+		              '</div>' + 
+		              '<div class="modal-body" ng-transclude></div>' + 
+		            '</div>' + 
+		          '</div>' + 
+		        '</div>',
+		      restrict: 'E',
+		      transclude: true,
+		      replace:true,
+		      scope:true,
+		      link: function postLink(scope, element, attrs) {
+		          scope.$watch(attrs.visible, function(value){
+		        //	  alert("nbfsdjnFKSND,FNSDF,");
+		          
+		          if(value == true)
+		            $(element).modal('show');
+		          else
+		            $(element).modal('hide');
+		        });
+
+		        $(element).on('shown.bs.modal', function(){
+		          scope.$apply(function(){
+		            scope.$parent[attrs.visible] = true;
+		          });
+		        });
+
+		        $(element).on('hidden.bs.modal', function(){
+		          scope.$apply(function(){
+		            scope.$parent[attrs.visible] = false;
+		          });
+		        });
+		      }
+		    };
+		  });
+		
+</script>
+
+</html>

@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="https://rawgit.com/ghostbar/angular-file-model/master/angular-file-model.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  
+  <style>
+  
+  .list-header{
+  background-image: -webkit-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: -moz-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: -ms-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: -o-linear-gradient(top, #80D8EE, #38BDE0);
+  background-image: linear-gradient(top, #80D8EE, #38BDE0);
+  color: white;
+  }
+  
+      html,body{width:100%;
+      height:100%;
+    font-family:  'Lucida Grande/Tahoma', Helvetica/Roboto;
+}
+.logo i {
+    font-size: 31px;
+    margin-right: 4px;
+    word-spacing: 14px;
+}
+.logo{
+    color: #F68428;
+    margin: 0;
+    font-size: 31px;
+    padding: 4px 0;
+    padding-bottom: 15px;
+
+}
+.login-bottom-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    color:#9DACCB;
+    line-height: 19px;
+}
+
+header{
+    background: #3b5998;
+    padding-top: 20px;
+}
+header .form-group{
+    margin-bottom: 0px;
+}
+header .btn-header-login{
+    margin-bottom: 15px;    
+}
+.login-text {
+  
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  
+  border: solid #70D2EB  1px;
+  width:250px;
+  height:29px;
+}
+
+.search-text {
+  
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  
+  border: solid #70D2EB  1px;
+  width:180px;
+  height:29px;
+}
+
+.login-btn {
+margin: -4px 0px 0px 20px;
+padding: 1px 0px 1px 0px;
+   background: #70D2EB;
+  background-image: -webkit-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: -moz-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: -ms-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: -o-linear-gradient(top, #70D2EB, #70D2EB);
+  background-image: linear-gradient(to bottom, #70D2EB, #70D2EB);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 6px;
+  text-shadow: 0px 1px 0px #898a88;
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 13px;
+  border: solid #1d2a5b  1px;
+  width:160px;
+  height:29px;
+}
+.login-btn:hover {
+  background: #637BAD;
+  background-image: -webkit-linear-gradient(top, #637BAD, #5973A8);
+  background-image: -moz-linear-gradient(top, #637BAD, #5973A8);
+  background-image: -ms-linear-gradient(top, #637BAD, #5973A8);
+  background-image: -o-linear-gradient(top, #637BAD, #5973A8);
+  background-image: linear-gradient(to bottom, #637BAD, #5973A8);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 6px;
+  text-shadow: 0px 1px 0px #898a88;
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  font-family: Arial;
+  color: #f3ffff;
+  font-size: 13px;
+  
+  border: solid #1d2a5b  1px;
+  text-decoration: none;
+}
+.login-main{
+    margin-top: 130px;
+}
+.multibox{
+    padding-left: 0px;
+    padding-bottom: 10px;
+}
+.login-main span{
+    font-size: 12px;
+} 
+#wrap{
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #D3D8E8));
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #D3D8E8 100%);
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #D3D8E8 100%);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+strong{
+    color:#141823;
+    font-size:25px;
+    font-weight:bold;
+}
+.signup-btn {
+  background: #79bc64;
+  background-image: -webkit-linear-gradient(top, #79bc64, #578843);
+  background-image: -moz-linear-gradient(top, #79bc64, #578843);
+  background-image: -ms-linear-gradient(top, #79bc64, #578843);
+  background-image: -o-linear-gradient(top, #79bc64, #578843);
+  background-image: linear-gradient(to bottom, #79bc64, #578843);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  text-shadow: 0px 1px 0px #898a88;
+  -webkit-box-shadow: 0px 0px 0px #a4e388;
+  -moz-box-shadow: 0px 0px 0px #a4e388;
+  box-shadow: 0px 0px 0px #a4e388;
+  font-family: Arial;
+  color: #f3ffff;
+  font-size: 13px;
+  padding: 10px 20px 10px 20px;
+  border: solid #3b6e22  1px;
+  text-decoration: none;
+  width:250px;
+  height:35px;
+  }
+
+
+.signup-btn:hover {
+  background: #79bc64;
+  background-image: -webkit-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -moz-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -ms-linear-gradient(top, #79bc64, #5e7056);
+  background-image: -o-linear-gradient(top, #79bc64, #5e7056);
+  background-image: linear-gradient(to bottom, #79bc64, #5e7056);
+  text-decoration: none;
+ 
+}
+.navbar-default .navbar-brand{
+        color:#fff;
+        font-size:30px;
+        font-weight:bold;
+    }
+.form .form-control { margin-bottom: 10px; }
+@media (min-width:768px) {
+    #home{
+        margin-top:50px;
+    }
+    #home .slogan{
+        color: #0e385f;
+        line-height: 29px;
+        font-weight:bold;
+    }
+}
+
+footer hr{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.footer-options ul{
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+.footer-options ul li{
+    float:left;
+    list-style: none;
+    padding: 5px;
+    font-size: 12px;
+}
+.footer-options ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.copyrights{
+    margin-top: 25px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////
+HEADER
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.header {
+	/*background: url(../images/layout/bg-header-top.jpg) 0 32px no-repeat;*/
+	height: 150px;
+}
+.list-header {
+	
+	width: 100%;
+	height: 23px;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+.list-header li {
+	float: right;
+	display: inline;
+	margin: 4px 20px 0 0;
+}
+.list-header .tagline {
+	float: left;
+	margin: 4px 0 0 30px;
+	padding: 0 0 15px 0;
+}
+.header h1 {
+	float: left;
+	/* background: url(../images/2015/logo.png) no-repeat; */
+	width: 245px;
+	height: 110px;
+	text-indent: -200px;
+	margin: 37px 0 0 0;
+}
+.nav {
+	margin: 0;
+	padding: 0;
+	height: 1em;
+}
+.header .nav {
+	float: right;
+	margin: 35px 0px 0 0;
+}
+.header .nav li {
+	list-style: none;
+	float: left;
+	font-size: 19px;
+}
+.header .nav li a {
+	display: block;
+	padding: 10px 13px;
+	color: #2ba9bd;
+	text-decoration: none;
+}
+.header .nav li ul {
+	display: none;
+	width: 11em; /*width to help Opera out*/
+	background-color: #2ba9bd;
+}
+.header .nav li:hover ul, .header .nav li.hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 2000;
+}
+.header .nav li ul li a {
+	font-size: 14px !important;	
+}
+.header .nav li:hover li, .header .nav li.hover li {
+	float: none;
+}
+.header .nav li:hover li a, .header .nav li:hover li a {
+	background-color: #2ba9bd;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.header .nav li li a:hover {
+	background-color: #16535b;
+}
+
+.wrap-main {
+	width: 1004px;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.mainpage {
+	background-image: -webkit-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: -moz-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: -ms-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: -o-linear-gradient(top, #E5E5E5, #FFFFFF);
+  	background-image: linear-gradient(top, #E5E5E5, #FFFFFF);
+}
+
+.search {	
+	margin: 0 0 0 0;
+	padding: 0 0 0 100px;
+}
+
+.petdet {	
+	margin: 0 0 0 0;
+	padding: 0 0 0 5px;
+	background: #ffffff;
+}
+
+.sidebar {	
+	margin: 8px 0 0 0;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+.container-fluid{
+padding: 0 0 0 0;
+}
+  </style>
+  </head>
+  
+  <body>
+  	<div ng-app="PetAdopt"  data-ng-controller="PetAdopt">
+  		<div class="container-fluid">
+  		<!--/////////////////////////////////////HEADER///////////////////////////////////////////-->
+		      <div class="header">
+        	  <ul class="list-header">
+                <li class="tagline">Search Pets. Adopt Pets. Save Pets.</li>
+                </ul>
+              
+              
+    
+    <div class="row">
+
+        <!-- <div class="col-md-4"> -->
+            <!-- <h1>Pet Adopt</h1> -->
+      
+            <img width="156px" height="120px" style="margin:0 0 0 -1150px" src="/images/logo.png"/>
+      
+        <div class="col-md-6" style="margin: 0 0 0 300px">
+            <div class="row">
+		
+		            <ul class="nav">
+                <li><a  href="#">ABOUT</a>
+				</li>
+
+                <li><a  href="#">PROTECT</a>
+                		<ul>
+                            <li><a href="#">Pet Insurance</a></li>
+                            <li><a href="#">Lost Pet Recovery Services </a></li>
+						</ul>
+				</li>
+                <li><a  href="#">BLOG</a>
+                		<ul>
+                        	<li><a href="#">Health, Behavior, and Other Tips</a></li>
+						</ul>
+				</li>
+				
+                <li><a  href="#">LOOK</a>
+                		<ul>
+                        	<li><a href="#">Facebook Fan Page</a></li>
+						</ul>
+				</li>     
+				         
+				<li class="ng-hide" ng-show="adwelcome"><a  href="#"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+                		<ul>
+                			<li><a role="button"  ng-model="selected" href="" ng-click="logout()">Logout</a></li>
+						</ul>
+				</li> 
+				  
+            </ul>
+		
+            </div> 
+           
+        </div>
+    </div>
+    
+            
+        </div><!--end header-->
+
+<!--/////////////////////////////////////HEADER///////////////////////////////////////////-->
+  		
+  		
+  		
+	<div class="row" style="background:#70D2EB;"><div class="col-md-1"></div></div>
+	
+	<div class="row mainpage">
+  	
+  	<div class="row col-md-12 search" ng-hide="main"><strong>Adopt Your Perfect Dog, Cat or More! Start Searching Now.</strong>
+
+  	<form name="pet_search_form" enctype="multipart/form-data" novalidate>
+					
+				<input type="text" name="sr_type" ng-model="sr_type" maxlength="10" placeholder="Pet type Dog/Cat" ng-change="petsrdisabled()" class="search-text" required>
+                   
+                <input type="text" name="sr_color" ng-model="sr_color" maxlength="10" placeholder="Pet Color" ng-change="petsrdisabled()" class="search-text" required>
+                  
+                <input type="text" name="sr_breed" ng-model="sr_breed" maxlength="10" placeholder="Pet Breed" ng-change="petsrdisabled()" class="search-text" required>
+                   
+                <input type="text" name="sr_gender" ng-model="sr_gender" maxlength="6" placeholder="Pet Gender" ng-change="petsrdisabled()" class="search-text" required>
+
+                <input type="submit" value="Search" class="btn btn-primry login-btn" ng-click="adpetsearch()">
+            
+	</form>
+
+  	</div>
+  	<div class="row col-md-12 search" ng-show=true>
+			  	<br>
+			  	</div>
+   
+  <div class="col-md-1"></div>
+	<div class="col-md-7 container" style="background:#ffffff;">
+   	<div class="ng-show" ng-hide="initpet">
+    <br>
+    <div class="row">
+  <div class="col-md-4" ng-repeat="id1 in details1">
+    <div class="thumbnail">
+    
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item active">
+              <a role="button"  ng-model="selected" href="" ng-click="moredet(id1)"><img class="img-rounded" style="height:180px;width:180px" src="/images/{{id1.p_image_name}}"></a>
+         </div>
+    </div>
+</div> 
+    
+    
+<!--       <a role="button"  ng-model="selected" href="" ng-click="moredet(id1)"><img width="156px" height="70px" src="/images/{{id1.p_image_name}}"/></a> -->
+      <div class="caption">
+        <h3 class="text-center">{{id1.p_name}}</h3>
+        <p class="text-center">{{id1.p_breed}}</p>
+      </div>
+  </div>
+  </div>
+</div>
+
+    </div>
+    
+    <div class="" ng-show="searchpetshow">
+ <br>
+     <div class="row">
+  <div class="col-sm-6 col-md-4" ng-repeat="id1 in details1">
+    <div class="thumbnail">
+      <a role="button"  ng-model="selected" href="" ng-click="moredet(id1)"><img class="img-rounded" style="height:180px;width:180px" src="/images/{{id1.p_image_name}}"/></a>
+      <div class="caption">
+        <h3 class="text-center">{{id1.p_name}}</h3>
+        <p class="text-center">{{id1.p_breed}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+        	  	
+  	
+        	<div class="" ng-show="moredetshow">
+        	<br>
+        	<div ng-repeat="id1 in details1">
+        	<div class="row">
+        	<div class="media col-md-7">
+			  <div class="media-left">
+			      <img class="media-object" style="border: solid #70D2EB  1px; height:250px;" src="/images/{{id1.p_image_name}}" alt="...">
+			  </div>
+			</div>
+        	
+        	<div class="col-md-3" style="margin:0 0 0 25px">
+        		<label>Name: {{id1.p_name}}</label><br>
+        		<label>Breed: {{id1.p_breed}}</label><br>
+        		<label>Gender: {{id1.p_gender}}</label><br>
+        		<label>Height: {{id1.p_height}} cms</label><br>
+        		<label>Weight: {{id1.p_weight}} lbs</label><br><br>
+        		<form>
+        		<input type="submit" class="btn btn-primry login-btn" value="Adopt" ng-click="interest(id1)" ng-show="adwelcome">
+        		</form>
+			</div>
+				</div>
+				<div class="row">
+        		<label style="padding:0 0 0 5px"><br>{{id1.p_description}}</label><br><br>
+        		<label style="color:red; position: static;padding:0 0 0 5px" ng-hide="main">Note: </label>
+        		<label ng-hide="main">If you want to adopt this pet please login or create a new account.</label><br>
+        		</div>
+        	
+        	</div>
+        	
+        	<div class="row" ng-hide="resaftintr">
+        	<p>Shelter Owner will contact you shortly.</p>
+        	</div>
+        	
+        	</div>
+        	
+        	</div>
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+        	<!-- Side Bar Processing -->
+        	<!-- Sign In Form -->
+        	<div class="container col-md-3 sidebar">
+			<div class="ng-show" ng-hide="main">
+			<h1 style="text-align:center">Welcome!</h1>
+			<p  style="text-align:center"style="padding:0 0 0 -100px">Current PetAdopt Pet Lovers Sign-in here:</p>
+         	<form name="mainform" class="form-horizontal" ng-model="mainform" novalidate style="padding:0 0 0 50px">
+         	
+         	<div class="radio form-group">
+         	&nbsp&nbsp&nbsp&nbsp&nbsp
+  				<input type="radio" ng-model="signon" name="signon" value="ad_signon" ng-change="mainr()">
+				<label>Sign In as Adoptor</label>
+			</div>
+			
+  			<div class="radio form-group">	  
+  			&nbsp&nbsp&nbsp&nbsp&nbsp		
+				<input type="radio" ng-model="signon" name="signon" value="sh_signon" ng-change="mainr()">
+				<label>Sign In as Shelter</label>
+			</div>
+			<br>
+			<div class="form-group">	
+				<input type="email" name="email" ng-model="email" maxlength="30" placeholder="Email" class="login-text" ng-change="ismaindisabled()" required>
+				<span style="color:green" class="glyphicon glyphicon-ok" ng-show="mainform.email.$dirty && mainform.email.$valid"></span><br>
+				<span style="color:red" ng-show="mainform.email.$dirty && mainform.email.$invalid">
+				
+				<span ng-show="mainform.email.$error.required">
+				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			  	<span class="sr-only">Error:</span>
+			  	Email required
+			 	</span>
+				<span ng-show="mainform.email.$error.email"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+			  	<span class="sr-only">Error:</span>
+			  	Enter a valid email address
+			  	</span>
+				</span>
+			</div>
+     		
+     		<div class="form-group">				
+ 				<input type="password" name="password" ng-model="password" maxlength="15" placeholder="Password" class="login-text" ng-change="ismaindisabled()" required><br>
+				<span style="color:red" ng-show="mainform.password.$dirty && mainform.password.$invalid">
+				<span ng-show="mainform.password.$error.required">
+				<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+				<span class="sr-only">Error:</span>
+				Password required
+				</span>
+				</span>
+           	</div>
+		   	
+		   	<div class="form-group">
+    
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    
+  </div>
+  
+		   	<div class="row">			
+           		<input type="submit" class="btn btn-primary login-btn" value="SignIn" name="SignIn" ng-click="signin()" ng-disabled="mainsub">
+         	</div>
+         	
+         	<div class="row">
+         	<br>
+         		<p><a role="button"  ng-model="selected" href="" ng-click="signup()">Register for New User/New Shelter!</a></p>
+         	</div>
+         	</form>
+         	</div>
+         	
+         	
+
+        	
+
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+         	
+         		<!-- landing Sign Up Form -->
+        		<div  ng-show="landup">
+        		
+        					
+			<h1 style="text-align:center">Welcome!</h1>
+			<p  style="text-align:center"style="padding:0 0 0 -100px">Please select from below option</p>
+         	<form name="landupform" class="form-horizontal" ng-model="landupform" novalidate style="padding:0 0 0 50px">
+         	
+         	<div class="radio form-group">
+         	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  				<input type="radio" ng-model="signon1" name="signon1" value="ad_signon1" ng-change="ad_up()">
+				<label>Adoptor</label>
+			</div>
+			
+  			<div class="radio form-group">	  
+  			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="radio" ng-model="signon1" name="signon1" value="sh_signon1" ng-change="sh_up()">
+				<label>Shelter</label>
+			</div>
+
+         	</form>
+      
+        		
+         		</div>
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+                <!-- Sign Up form for Adoptor -->
+	           	<div  ng-show="ad_sgnup">         				
+      				<form name="ad_up_form" class="form-horizontal" ng-model="ad_up_form" novalidate style="padding:0 0 0 50px">	
+      					<div class="form-group">
+      					<br>
+      					<input type="email" name="ad_email" ng-model="ad_email" maxlength="30" placeholder="Email" class="login-text"  ng-change="isadupdisabled()" required><br>
+						<span style="color:red" ng-show="ad_up_form.ad_email.$dirty && ad_up_form.ad_email.$invalid">
+							<span ng-show="ad_up_form.ad_email.$error.required">Email is required.</span>
+							<span ng-show="ad_up_form.ad_email.$error.email">Invalid email address.</span>
+						</span>
+      					</div>
+      					
+      					<div class="form-group">
+      					<input type="password" name="ad_password" ng-model="ad_password" maxlength="15" placeholder="Password" class="login-text" ng-change="isadupdisabled()" required><br>
+						<span style="color:red" ng-show="ad_up_form.ad_password.$dirty && ad_up_form.ad_password.$invalid">
+							<span ng-show="ad_up_form.ad_password.$error.required">Password is required.</span>
+						</span>
+						</div>
+						
+						<div class="form-group">
+						<input type="fname" name="ad_fname" ng-model="ad_fname" maxlength="30" placeholder="First Name" class="login-text" ng-change="isadupdisabled()" required><br>
+						<span style="color:red" ng-show="ad_up_form.ad_fname.$dirty && ad_up_form.ad_fname.$invalid">
+							<span ng-show="ad_up_form.ad_fname.$error.required">First Name is required.</span>
+						</span>
+						</div>
+						
+						<div class="form-group">
+						<input type="lname" name="ad_lname" ng-model="ad_lname" maxlength="30" placeholder="Last Name" class="login-text" ng-change="isadupdisabled()" required><br>
+						<span style="color:red" ng-show="ad_up_form.ad_lname.$dirty && ad_up_form.ad_lname.$invalid">
+							<span ng-show="ad_up_form.ad_lname.$error.required">Last Name is required.</span>
+						</span>
+						</div>
+						
+						<div class="form-group">
+						<input type="number" name="ad_contact" ng-model="ad_contact" maxlength="10" placeholder="Contact" class="login-text" ng-change="isadupdisabled()" required><br>
+						<span style="color:red" ng-show="ad_up_form.ad_contact.$dirty && ad_up_form.ad_contact.$invalid">
+							<span ng-show="ad_up_form.ad_contact.$error.required">Contact is required.</span>
+						</span>
+						</div>
+						
+						<div class="form-group">
+						<input type="text" name="ad_address" ng-model="ad_address" maxlength="45" placeholder="Address" class="login-text" ng-change="isadupdisabled()" required><br>
+						<span style="color:red" ng-show="ad_up_form.ad_address.$dirty && ad_up_form.ad_address.$invalid">
+							<span ng-show="ad_up_form.ad_address.$error.required">Address is required.</span>
+						</span>
+                    	</div>
+						
+                     	<input type="submit" ng-click="ad_signup()" class="btn btn-primry login-btn" style="width:250px;margin:0 0 0 -13px"  ng-disabled="adupsub">
+						</form>
+					</div>
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+				<!-- Sign Up form for Shelter -->
+				<div  ng-show="sh_sgnup">
+               					
+     				<form name="sh_up_form" class="form-horizontal" ng-model="sh_up_form" novalidate style="padding:0 0 0 50px">
+     				<div class="form-group">
+      				<br>
+     				<input type="email" name="sh_email" ng-model="sh_email" maxlength="30" placeholder="Email" class="login-text" ng-change="isshupdisabled()" required>
+					<span style="color:red" ng-show="sh_up_form.sh_email.$dirty && sh_up_form.sh_email.$invalid">
+					<span ng-show="sh_up_form.sh_email.$error.required">Email is required.</span>
+					<span ng-show="sh_up_form.sh_email.$error.email">Invalid email address.</span>
+					</span>
+     				</div>
+     				
+     				<div class="form-group">	
+     				<input type="password" name="sh_password" ng-model="sh_password" maxlength="15" placeholder="Password" class="login-text" ng-change="isshupdisabled()" required>
+					<span style="color:red" ng-show="sh_up_form.sh_password.$dirty && sh_up_form.sh_password.$invalid">
+					<span ng-show="sh_up_form.sh_password.$error.required">Password is required.</span>
+					</span>
+					</div>
+     				
+     				<div class="form-group">
+					<input type="text" name="sh_name" ng-model="sh_name" maxlength="30" placeholder="Shelter Name" class="login-text" ng-change="isshupdisabled()" required>
+					<span style="color:red" ng-show="sh_up_form.sh_name.$dirty && sh_up_form.sh_name.$invalid">
+					<span ng-show="sh_up_form.sh_name.$error.required">Shelter Name is required.</span>
+					</span>
+					</div>
+     				
+     				<div class="form-group">
+					<input type="number" name="sh_contact" ng-model="sh_contact" maxlength="10" placeholder="Contact" class="login-text" ng-change="isshupdisabled()" required>
+					<span style="color:red" ng-show="sh_up_form.sh_contact.$dirty && sh_up_form.sh_contact.$invalid">
+					<span ng-show="sh_up_form.sh_contact.$error.required">Contact is required.</span>
+					</span>
+					</div>
+     				
+     				<div class="form-group">
+					<input type="text" name="sh_address" ng-model="sh_address" maxlength="45" placeholder="Address" class="login-text" ng-change="isshupdisabled()" required>
+					<span style="color:red" ng-show="sh_up_form.sh_address.$dirty && sh_up_form.sh_address.$invalid">
+					<span ng-show="sh_up_form.sh_address.$error.required">Address is required.</span>
+					</span>
+                   </div>
+     				
+     				
+                    	<input type="submit" ng-click="sh_signup()" class="btn btn-primry login-btn" style="width:250px;margin:0 0 0 -13px"  ng-disabled="shupsub">
+					</form>
+				</div>
+
+			
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+<!-- -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#- -->
+
+				<!-- After Adoptor Login & Search form for Pet -->
+				  	<div  class="ng-hide" ng-show="adwelcome">
+				  	<h1 style="text-align:center">Welcome {{username}}!</h1>
+					  	<form name="pet_search_form" class="form-horizontal" enctype="multipart/form-data" novalidate style="padding:0 0 0 50px">
+     				<div class="form-group">										
+									<input type="text" name="sr_type" ng-model="sr_type" maxlength="10" placeholder="Pet type Dog/Cat" ng-change="petsrdisabled()" class="search-text" required>
+					                </div>
+     				
+     				<div class="form-group">   
+					                <input type="text" name="sr_color" ng-model="sr_color" maxlength="10" placeholder="Pet Color" ng-change="petsrdisabled()" class="search-text" required>
+					                  </div>
+     				
+     				<div class="form-group">
+					                <input type="text" name="sr_breed" ng-model="sr_breed" maxlength="10" placeholder="Pet Breed" ng-change="petsrdisabled()" class="search-text" required>
+					                   </div>
+     				
+     				<div class="form-group">
+					                <input type="text" name="sr_gender" ng-model="sr_gender" maxlength="6" placeholder="Pet Gender" ng-change="petsrdisabled()" class="search-text" required>
+					</div>
+     				
+     				<div class="form-group">
+					                <input type="submit" value="Search" class="btn btn-primry login-btn" ng-click="adpetsearch()">
+					            </div>
+						</form>
+					
+					</div>
+			
+			</div>    
+							<div class="col-md-1"></div>    
+    </div>
+    
+    <footer class="container">
+<hr>
+<div class="footer-options">
+<ul >
+    <li><a href="#">Mobile</li>
+    <li><a href="#">Find Friends</li>
+    <li><a href="#">Badges</li>
+    <li><a href="#">People</li>
+    <li><a href="#">Pages</li>
+    <li><a href="#">Places</a></li>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">Locations</a></li>
+    <li><a href="#">About</a></li>
+</ul>
+</div>
+<div style="clear:both"></div>
+<small class="copyrights"> © Copyrights reserved  2015</small>
+</footer>
+
+    
+    </div>
+    </div>
+    </body>
+
+<script>
+
+		var app = angular.module('PetAdopt', []);
+		
+		app.controller('PetAdopt', ['$scope','$http','$window',function ($scope,$http,$window) 
+	{
+			$scope.mainsub = true;
+			$scope.adupsub = true;
+			$scope.shupsub = true;
+			$scope.ptinsrt = true;
+			$scope.ptsearcch = true;
+			$scope.searchpetshow = false;
+			$scope.resaftintr = true;
+			$scope.moredetshow=false;
+	
+			$http({
+      	  		method: 'GET',
+      	 		url: '/checkLogin'
+        	 }).
+        then(function(response)
+        	{
+        	  	if (response.data.status == 200)
+					{	
+        	  			if(response.data.type === 'AD')
+        	  				{	
+	        	 				$scope.username=response.data.name;
+	        	 				$scope.ademailid=response.data.mail;
+	        	 				$scope.main=true;
+	        	 				$scope.adwelcome=true;
+        	  				}
+        	  			else
+        	  				{	
+        	  					/* $scope.username=response.data.name;
+        	  					$scope.sh_ret_email=response.data.mail;
+        	  					alert($scope.sh_ret_email);
+        	  					$scope.main=true;
+        	 					$scope.shwelcome=true; */	
+        	 					$window.location.href = '/showshelter';
+        	  				}
+					}
+        	  	
+        	 });
+
+			
+			$http({
+				
+      	  		method: 'GET',
+      	 		url: '/petdetails'
+        	 }).
+        then(function(response)
+        	{
+        		//alert(response.data.status);
+        		//alert(response.data.l);
+        		//alert(response.data.result);
+        	  	if (response.data.status == 200)
+					{
+        	  		$scope.details1=angular.fromJson(response.data.result);
+        	  		var details=angular.fromJson(response.data.result);
+        	  			/* for (var i=0; i<response.data.l; i++){
+        	  				$scope.id=details[i]["p_id"];
+        	  				//alert(details[i]["p_id"]);
+	        	 	 	}  */
+					}
+        	  	
+        	 });
+			
+			
+			
+			$scope.ismaindisabled = function()
+			{
+				if($scope.mainform.email.$dirty && $scope.mainform.email.$valid)
+					{
+					if($scope.mainform.password.$dirty && $scope.mainform.password.$valid)
+						{
+						if($scope.mainrd === true)
+							{
+							$scope.mainsub = false;
+							}
+						}
+					else
+						{
+						$scope.mainsub = true;
+						}
+					}
+			}
+			
+			$scope.isadupdisabled = function()
+			{
+				if($scope.ad_up_form.ad_email.$dirty && $scope.ad_up_form.ad_email.$valid)
+					{
+					if($scope.ad_up_form.ad_password.$dirty && $scope.ad_up_form.ad_password.$valid)
+						{
+						if($scope.ad_up_form.ad_fname.$dirty && $scope.ad_up_form.ad_fname.$valid)
+							{
+							if($scope.ad_up_form.ad_lname.$dirty && $scope.ad_up_form.ad_lname.$valid)
+								{
+								if($scope.ad_up_form.ad_contact.$dirty && $scope.ad_up_form.ad_contact.$valid)
+									{
+									if($scope.ad_up_form.ad_address.$dirty && $scope.ad_up_form.ad_address.$valid)
+										{
+										$scope.adupsub = false;
+										}
+									}
+								}
+							}
+						}
+					else
+						{
+						$scope.adupsub = true;
+						}
+					}
+			}
+			
+			$scope.isshupdisabled = function()
+			{
+				if($scope.sh_up_form.sh_email.$dirty && $scope.sh_up_form.sh_email.$valid)
+					{
+					if($scope.sh_up_form.sh_password.$dirty && $scope.sh_up_form.sh_password.$valid)
+						{
+						if($scope.sh_up_form.sh_name.$dirty && $scope.sh_up_form.sh_name.$valid)
+							{
+							if($scope.sh_up_form.sh_contact.$dirty && $scope.sh_up_form.sh_contact.$valid)
+								{
+								if($scope.sh_up_form.sh_address.$dirty && $scope.sh_up_form.sh_address.$valid)
+									{
+									$scope.shupsub = false;
+									}
+								}
+							}
+						}
+					else
+						{
+						$scope.shupsub = true;
+						}
+					}
+			}
+			
+			$scope.petsrdisabled = function()
+			{
+				if($scope.pet_search_form.sr_type.$dirty && $scope.pet_search_form.sr_type.$valid)
+					{
+						$scope.ptsearcch = false;
+					}
+				if($scope.pet_search_form.sr_color.$dirty && $scope.pet_search_form.sr_color.$valid)
+					{
+						$scope.ptsearcch = false;
+					}
+				if($scope.pet_search_form.sr_breed.$dirty && $scope.pet_search_form.sr_breed.$valid)
+					{
+						$scope.ptsearcch = false;
+					}
+				if($scope.pet_search_form.sr_gender.$dirty && $scope.pet_search_form.sr_gender.$valid)
+					{
+						$scope.ptsearcch = false;
+					}
+			}
+
+			$scope.mainr = function (){
+				$scope.mainrd = true;  
+				if($scope.mainform.email.$dirty && $scope.mainform.email.$valid)
+				{
+				if($scope.mainform.password.$dirty && $scope.mainform.password.$valid)
+					{
+					if($scope.mainrd === true)
+						{
+						$scope.mainsub = false;
+						}
+					}
+				else
+					{
+					$scope.mainsub = true;
+					}
+				}
+			}
+			
+			$scope.ad_up = function (){
+				$scope.ad_sgnup = true;  
+				$scope.sh_sgnup = false;
+			}
+			
+			$scope.ad_in = function (){
+				$scope.ad_sgnin = true;  
+			}
+			
+			$scope.sh_up = function (){
+				$scope.sh_sgnup = true;  
+				$scope.ad_sgnup = false;
+			}
+			
+			$scope.sh_in = function (){
+				$scope.sh_sgnin = true;  
+			}
+			
+			$scope.signup = function (){
+					$scope.landup = true;
+					$scope.main = true;	
+			}
+			
+			$scope.pt_details = function (){
+				$scope.pt_detail = true;  
+			}
+			
+			$scope.new_pet = function (){
+				$scope.shwelcome = false;
+				$scope.pt_detail = true;  
+				
+			}
+			
+			$scope.moredet = function (id1){
+				//alert("In more details function");
+	  			//alert(id1["p_id"]);
+	  			var id2 = id1["p_id"];
+	  			$http({
+			      	  method: 'POST',
+			      	  url: '/morepetdet',
+			      	  data: {"id2":id2}
+			        }).
+			          then(function(response) {
+			        	  if (response.data.status == 200)
+							{
+			        		  $scope.initpet=true; 
+			        		  $scope.searchpetshow=false;
+			        		  $scope.moredetshow=true;
+			        		  $scope.details1=angular.fromJson(response.data.result);
+		        	  		var details=angular.fromJson(response.data.result);
+		        	  			for (var i=0; i<response.data.l; i++){
+		        	  				$scope.id=details[i]["p_id"];
+			        	 	 	}
+							}
+								
+			          }); 
+			}
+			
+			$scope.ad_signup = function (){
+				var ad_email=$scope.ad_email;
+				var ad_password=$scope.ad_password;
+				var ad_fname=$scope.ad_fname;
+				var ad_lname=$scope.ad_lname;
+				var ad_contact=$scope.ad_contact;
+				var ad_address=$scope.ad_address;
+				$http({
+			      	  method: 'POST',
+			      	 url: '/ad_signup',
+			      	 data: {"ad_email":ad_email,"ad_password":ad_password,"ad_fname":ad_fname,"ad_lname":ad_lname,"ad_contact":ad_contact,"ad_address":ad_address}
+			        }).
+			          then(function(response) {
+			        	  if (response.data.status===200)
+			        		  {
+				        	  alert("Signup Successful! Please Login!")
+				        	  $window.location.href = '/';			        		  
+			        		  }
+			        	  else
+			        		  {
+			        		  alert("User already exist")
+			        		  }
+			          }); 
+			}
+			
+			$scope.signin = function (){
+				var email=$scope.email;
+				var password=$scope.password;
+	
+				if ($scope.signon === "ad_signon")
+					{
+						$http({
+				      	  		method: 'POST',
+				      	 		url: '/ad_signin',
+				      	 		data: {"email":email,"password":password}
+				        	 }).
+				        then(function(response)
+				        	{
+				     
+				        	  	if (response.data.status == 200)
+									{
+					        	 		$scope.username=response.data.name;
+					        	 		$scope.ademailid=response.data.email;
+					        	 		$scope.main=true;
+					        	 		$scope.adwelcome=true;
+					        	 		$scope.searchpetshow=false;
+									}
+				        	  	else
+				        			{
+					        			alert("Invalid Usernme or Password"); 
+				        		  	}
+				        	 }); 
+				      }
+			        	
+				if ($scope.signon === "sh_signon")
+				{
+					$http({
+			      	  		method: 'POST',
+			      	 		url: '/sh_signin',
+			      	 		data: {"email":email,"password":password}
+			        	 }).
+			        then(function(response)
+			        	{
+			        	 
+		        	  	  if (response.data.status == 200)
+							{
+			        	 		$scope.username=response.data.name;
+			        
+			        	 		$scope.sh_ret_email=response.data.email;
+			        	 		$scope.main=true;
+			        	 		$scope.shwelcome=true; 
+		        	  		    $window.location.href = '/showshelter';
+							}
+		        	  	else
+		        			{
+			        			alert("Invalid Usernme or Password"); 
+		        		  	} 
+			        	 }); 
+			      }
+
+			         
+			}
+			
+			$scope.sh_signup = function (){
+				var sh_email=$scope.sh_email;
+				var sh_password=$scope.sh_password;
+				var sh_name=$scope.sh_name;
+				var sh_contact=$scope.sh_contact;
+				var sh_address=$scope.sh_address;
+				$http({
+			      	  method: 'POST',
+			      	 url: '/sh_signup',
+			      	 data: {"sh_email":sh_email,"sh_password":sh_password,"sh_name":sh_name,"sh_contact":sh_contact,"sh_address":sh_address}
+			        }).
+			          then(function(response) {
+			        	  alert("Signup Successful! Please Login!")
+			        	  $window.location.href = '/';
+			          }); 
+			}
+			
+			$scope.adpetsearch = function (){
+	
+
+				var sr_type=$scope.sr_type;
+				var sr_color=$scope.sr_color;
+				var sr_breed=$scope.sr_breed;
+				var sr_gender=$scope.sr_gender;
+
+				$http({
+			      	  method: 'POST',
+			      	  url: '/petsearch',
+			      	  data: {"sr_type":sr_type,"sr_color":sr_color,"sr_breed":sr_breed,"sr_gender":sr_gender}
+			        }).
+			          then(function(response) {
+			        	  if (response.data.status == 200)
+							{
+			        		  	
+			        		  	$scope.initpet=true;
+			        		  	$scope.searchpetshow=true;
+			        		  	$scope.moredetshow=false;
+			        	
+			        	  		$scope.details1=angular.fromJson(response.data.result);
+			        	  		var details=angular.fromJson(response.data.result);
+			        	  		
+			        	  			for (var i=0; i<response.data.l; i++){
+			        	  				$scope.id=details[i]["p_id"];
+			        	  			
+				        	 	 	} 
+								}
+			          }); 
+			}
+			
+$scope.interest = function (id1){
+				
+
+	  			var id2 = id1["p_id"];
+	  			var ademail2intrt = $scope.ademailid;
+	  		
+	  			$http({
+			      	  method: 'POST',
+			      	  url: '/putinterest',
+			      	  data: {"id2":id2,"ademail2intrt":ademail2intrt}
+			        }).
+			          then(function(response) {
+			        	  if (response.data.status == 200)
+							{
+			        		  	
+			        		  $scope.resaftintr = false;
+							}
+								
+			          }); 
+			}
+
+$scope.logout = function (){
+	
+	
+	$http({
+  	  		method: 'POST',
+  	 		url: '/logout',
+    	 }).
+    	then(function(response)
+    	{
+    		$window.location.href = '/';
+    	})
+
+}
+			
+	
+	
+}]);
+		
+		
+		
+		
+</script>
+
+  
+</html>

@@ -1,0 +1,3341 @@
+/* 
+Petango.com StyleSheet - 2011
+designed by Trevor Dupp
+ */
+/*  Table of Contents
+General Styles - Line 19      
+
+
+
+
+  */
+*{
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+#mainbar {
+	width: 660px;
+	float: right;
+}
+#sidebar {
+	width: 270px;
+	float: left;
+}
+#scroller {
+	cursor: pointer;
+	font: 11px Helvetica, Tahoma, Arial;
+	margin-left: -45px;
+	top: 34px;
+	width: 44px;
+	height: 187px;
+	z-index: 980000 !important;
+	background-image: url(../images/layout/Social_vert2.png);
+	padding: 4px 0 0px 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+GENERAL STYLES
+////////////////////////////////////////////////////////////////////////////////////////// */
+.petAlertEmail {
+	height: 33px;
+	width: 201px;
+	padding: 0 0 0 5px;
+	float: left;
+}
+body {
+	background: url('../images/2015/page_background.jpg') top left repeat-x #fff;
+	font-family: arial;
+}
+.wrap-main {
+	width: 1004px;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}
+.wrap-content {
+	float: left;
+	width: 1004px;
+}
+.clear {
+	clear: both;
+}
+.wrap-1004 {
+	float: left;
+	width: 1004px;
+}
+.page {
+	float: left;
+	width: 964px;
+	background: #fff;
+	padding: 20px 20px 20px 20px;
+	margin: 20px 0 0 0;
+}
+hr {
+	border-top: #ccc 4px dashed;
+	width: 98%;
+	height: 0px;
+	color: #fff;
+	border-left: #FFF;
+	border-right: #FFF;
+}
+strong {
+	font-weight: 900;
+}
+.typo {
+	font-family: "museo-1", "museo-2";
+}
+.vr-line1 {
+	float: left;
+	width: 4px;
+}
+.vr-line2 {
+	float: left;
+	width: 4px;
+	height: 315px;
+}
+.vr-line3 {
+	float: left;
+	width: 4px;
+	height: 255px;
+}
+.HorSocial {
+	background-image: url(../images/layout/Widget_hori.png);
+	width: 417px;
+	height: 56px;
+	position: relative;
+	float: right;
+	top: -26px;
+	padding: 25px 10px 0px 10px
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+HEADER
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.header {
+	/*background: url(../images/layout/bg-header-top.jpg) 0 32px no-repeat;*/
+	height: 153px;
+}
+.list-header {
+	float: left;
+	width: 1004px;
+	height: 23px;
+	margin: 4px 20px 0 0;
+	padding: 0;
+}
+.list-header li {
+	float: right;
+	display: inline;
+	margin: 4px 20px 0 0;
+}
+.list-header .tagline {
+	float: left;
+	margin: 4px 0 0 0;
+}
+.header h1 {
+	float: left;
+	background: url(../images/2015/logo.png) no-repeat;
+	width: 245px;
+	height: 110px;
+	text-indent: -9999px;
+	margin: 10px 0 0 0;
+}
+.nav {
+	margin: 0;
+	padding: 0;
+	height: 1em;
+}
+.header .nav {
+	float: right;
+	margin: 35px 0px 0 0;
+}
+.header .nav li {
+	list-style: none;
+	float: left;
+	font-size: 19px;
+}
+.header .nav li a {
+	display: block;
+	padding: 10px 13px;
+	color: #2ba9bd;
+	text-decoration: none;
+}
+.header .nav li ul {
+	display: none;
+	width: 11em; /*width to help Opera out*/
+	background-color: #2ba9bd;
+}
+.header .nav li:hover ul, .header .nav li.hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 2000;
+}
+.header .nav li ul li a {
+	font-size: 14px !important;	
+}
+.header .nav li:hover li, .header .nav li.hover li {
+	float: none;
+}
+.header .nav li:hover li a, .header .nav li:hover li a {
+	background-color: #2ba9bd;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+}
+.header .nav li li a:hover {
+	background-color: #16535b;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+MAIN CONTENT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.list-points li {
+	background: url(assets/images/layout/arrow-point.png) 0 .5em no-repeat;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 20px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+SEARCH
+////////////////////////////////////////////////////////////////////////////////////////// */
+/*
+.search {
+	float: left;
+	background: #d6d6d6;
+	width: 960px;
+	border: #ccc 1px solid;
+	margin: 10px 0 10px 0;
+	padding: 5px 20px 10px;
+}
+*/
+.search li {
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 7px 0 0 0;
+}
+.search p {
+	font-family: "museo-1", "museo-2";
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+SEARCH-2
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.search-group-sort {
+	width: 920px;
+	float: left;
+}
+.search-list-findapet {
+	list-style-type: none;
+	font-family: "museo-1", "museo-2";
+	font-weight: 900;
+	font-size: 14px;
+}
+.search-list-findapet li {
+	float: left;
+	padding-right: 5px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+FEATURES
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+#slider {
+	float: left;
+	background: #fff;
+	width: 1004px;
+	height: 332px;
+	margin: 0 0 20px 0;
+}
+/* slider */
+.slider .selector {
+	width: 90px;
+	display: block;
+	float: left;
+	margin-left: 5px;
+	margin-right: 15px;
+	margin-top: 5px;
+}
+.slider input {
+	width: 40px!important;
+	border: 0;
+	background: #F5F5F5;
+}
+/*-----------------SCROLLABLE-----------------*/
+
+/* get rid of those system borders being generated for A tags */
+a:active {
+	outline: none;
+}
+:focus {
+	-moz-outline-style: none;
+}
+/*root element for the scrollable */
+.scrollable {/* required settings */
+	position: relative;
+	overflow: hidden;
+	width: 540px;
+	height: 125px;
+}
+/*root element for the scrollable-2 */
+.scrollable-2 {/* required settings */
+	position: relative;
+	overflow: hidden;
+	width: 525px;
+	height: 250px;
+}
+/*root element for scrollable items */
+.scrollable .items {/* this cannot be too large */
+	width: 20000em;
+	position: absolute;
+	clear: both;
+}
+/*root element for scrollable items */
+.scrollable-2 .items-2 {/* this cannot be too large */
+	width: 20000em;
+	position: absolute;
+	clear: both;
+}
+/*a single item */
+.items div {
+	float: left;
+	width: 545px;
+}
+/*a single item-2 */
+.items-2 div {
+	float: left;
+	width: 525px;
+}
+/* single scrollable item */
+.scrollable img {
+	float: left;
+	margin: 10px 10px 10px 10px;
+	background-color: #fff;
+	padding: 2px;
+	border: 1px solid #ccc;
+	width: 150px;
+	height: 100px;
+}
+/* single scrollable-2 item */
+.scrollable-2 img {
+	float: left;
+	margin: 0 20px 0 0;
+	background-color: #fff;
+	padding: 2px;
+	border: 0 solid #ccc;
+	width: 200px;
+	height: 150px;
+}
+/* active item */
+.scrollable .active {
+	border: 2px solid #000;
+	position: relative;
+	cursor: default;
+}
+/* active item */
+.scrollable-2 .active {
+	border: 2px solid #000;
+	position: relative;
+	cursor: default;
+}
+/*-----------------SCROLLABLE-BUTTONS-----------------*/
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float: left;
+}
+/* this makes it possible to add next button beside scrollable */
+.scrollable-2 {
+	float: left;
+}
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background: url(../images/layout/scrollable/arrow/hori_large.png) no-repeat;
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 40px 10px;
+	cursor: pointer;
+	font-size: 1px;
+}
+/* prev, next, prevPage and nextPage buttons */
+a.browse-2 {
+	background: url(../images/layout/scrollable/arrow/hori_large.png) no-repeat;
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 85px 10px;
+	cursor: pointer;
+	font-size: 1px;
+}
+/* right */
+a.right {
+	background-position: 0 -30px;
+	clear: right;
+	margin-right: 0px;
+}
+a.right:hover {
+	background-position: -30px -30px;
+}
+a.right:active {
+	background-position: -60px -30px;
+}
+/* right */
+a.right-2 {
+	background-position: 0 -30px;
+	clear: right;
+	margin-right: 0px;
+}
+a.right-2:hover {
+	background-position: -30px -30px;
+}
+a.right-2:active {
+	background-position: -60px -30px;
+}
+/* left */
+a.left {
+	margin-left: 0px;
+}
+a.left:hover {
+	background-position: -30px 0;
+}
+a.left:active {
+	background-position: -60px 0;
+}
+/* left */
+a.left-2 {
+	margin-left: 0px;
+}
+a.left-2:hover {
+	background-position: -30px 0;
+}
+a.left-2:active {
+	background-position: -60px 0;
+}
+/* up and down */
+a.up, a.down {
+	background: url(assets/images/layout/vert_large.png) no-repeat;
+	float: none;
+	margin: 10px 50px;
+}
+/* up */
+a.up:hover {
+	background-position: -30px 0;
+}
+a.up:active {
+	background-position: -60px 0;
+}
+/* down */
+a.down {
+	background-position: 0 -30px;
+}
+a.down:hover {
+	background-position: -30px -30px;
+}
+a.down:active {
+	background-position: -60px -30px;
+}
+/* disabled navigational button */
+a.disabled {
+	visibility: hidden !important;
+}
+/* disabled navigational button */
+a.disabled-2 {
+	visibility: hidden !important;
+}
+/*-----------------SCROLLABLE-NAVIGATOR-----------------*/
+
+/* position and dimensions of the navigator */
+.navi {
+	margin-left: 200px;
+	width: 200px;
+	height: 20px;
+}
+/* items inside navigator */
+.navi a {
+	width: 8px;
+	height: 8px;
+	float: left;
+	margin: 3px;
+	background: url(../images/layout/navigator.png) 0 0 no-repeat;
+	display: block;
+	font-size: 1px;
+}
+/* mouseover state */
+.navi a:hover {
+	background-position: 0 -8px;
+}
+/* active state (current page state) */
+.navi a.active {
+	background-position: 0 -16px;
+}
+/*-----------------VERTICAL SCROLLABLE-----------------*/
+
+/* root element for scrollable */
+.vertical { /* required settings */
+	position: relative;
+	overflow: hidden; /* vertical scrollers have typically larger height than width */
+	height: 665px;
+	width: 300px;
+	border-top: 4px dashed #ddd;
+}
+/* root element for scrollable items */
+.items-vert {
+	position: absolute; /* this time we have very large space for height */
+	height: 20000em;
+	width: 300px;
+	margin: 0px;
+}
+/* single scrollable item */
+.item-vert {
+	border-bottom: 4px dashed #ddd;
+	margin: 10px 0;
+	padding: 15px;
+	font-size: 12px;
+	height: 100px;
+}
+/* elements inside single item */
+.item-vert img {
+	float: left;
+	margin-right: 20px;
+	height: 100px;
+	width: 100px;
+}
+.item-vert h3 {
+	margin: 0 0 5px 0;
+	font-size: 16px;
+	color: #456;
+	font-weight: normal;
+}
+/* the action buttons above the scrollable */
+#actions {
+	width: 300px;
+	margin: 30px 0 10px 0;
+}
+#actions a {
+	font-size: 11px;
+	cursor: pointer;
+	color: #666;
+}
+#actions a:hover {
+	text-decoration: underline;
+	color: #000;
+}
+.disabled {
+	visibility: hidden;
+}
+.next {
+	float: right;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+FEATURED CONTENT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.featured-content {
+	margin: 0 0 20px 0;
+	/*padding: 20px 20px 20px 20px; 
+	background: #fff;*/
+	border: 1px solid #b15f16;
+	background: #d4d2d0 url('../images/small_banner_bg.jpg') repeat-x top left;
+}
+.adopt-content {
+	float: left;
+	width: 680px;
+}
+.adopt-content container {
+	float: left;
+	width: 620px;
+}
+.title1 {
+}
+.title1 h2 {
+	margin-bottom: 5px;
+}
+.like {
+	float: right;
+	width: 175px;
+	align: right;
+}
+.petcounter {
+	display: none;
+	float: right;
+	width: 250px;
+	text-align: right;
+	font-family: "museo-1", "museo-2", serif;
+	color: #333;
+	font-weight: bold;
+	padding-right: 10px;
+}
+.petcounter h6 strong {
+	font-family: "museo-1", "museo-2", serif;
+	font-size: 24px;
+	color: #ed6d17;
+	font-weight: bold;
+}
+.scroll-videos-container {
+	float: left;
+	width: 620px;
+	background: #e0e0e0;
+	;
+	margin-bottom: 20px;
+}
+.login {
+	float: right;
+	width: 250px;
+}
+.shopprotect-content {
+	float: left;
+	width: 322px;
+}
+.shop-content {
+	float: left;
+	width: 300px;
+	margin: 0 0 -15px 0;
+}
+.shop-content1 {
+	float: left;
+	width: 300px;
+}
+.protect-content {
+	float: left;
+	width: 300px;
+	margin: 0px 0 -15px 0;
+}
+.protect-content1 {
+	float: left;
+	width: 300px;
+}
+/*-----------------TOOLS-----------------*/
+
+.item {
+	width: 300px;
+	height: 150px;
+	border: none; /*4px solid #222;*/
+	margin: 0 0 5px 0; /* required to hide the image after resized */
+	overflow: hidden; /* for child absolute position */
+	position: relative; /* display div in line */
+	float: left;
+}
+.item .caption {
+	width: 300px;
+	height: 150px;
+	background: #333;
+	color: #fff;
+	font: "museo-1", "museo-2", serif;
+	font-weight: bold;
+	/* fix it at the bottom */position: absolute;
+	left: 0; /* hide it by default */
+	display: none; /* opacity setting */
+	filter: alpha(opacity=80); /* ie  */
+	-moz-opacity: 0.8;    /* old mozilla browser like netscape  */
+	-khtml-opacity: 0.8;    /* for really really old safari */
+	opacity: 0.8;    /* css standard, currently it works in most modern browsers like firefox,  */
+}
+.item .caption a {
+	font: "museo-1", "museo-2", serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #0cc7dd;
+	line-height: 28px;
+	font-size: 30px; /* add spacing and make the whole row clickable*/
+	padding: 20px;
+	display: block;
+}
+.item .caption p {
+	padding: 20px;
+	margin: 0;
+	font: "museo-1", "museo-2", serif;
+	font-size: 30px;
+}
+.item img {
+	border: 0; /* allow javascript moves the img position*/
+	position: absolute;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+FEATURED CONTENT 2
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.blog {
+	margin: 0 0 20px 0;
+	background: #fff;
+	height: 330px;
+	padding: 20px 20px 0 20px;
+}
+.blog-content {
+	float: left;
+	width: 620px;
+}
+.look-content {
+	float: right;
+	width: 300px;
+	margin: 0 0 0 20px;
+}
+.scroll-blog-container {
+	float: left;
+	width: 620px;
+}
+.meta {
+	font-family: "arial", serif;
+	color: #787878;
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding-left: 20px;
+}
+#blg-dateBar {
+	background: #e8f8fb;
+}
+.blg-color-black {
+	font-family: "museo-1", "museo-2", serif;
+	color: #333;
+}
+.blg-color-green {
+	font-family: "museo-1", "museo-2", serif;
+	color: #a9b93c;
+}
+.blg-color-orange {
+	font-family: "museo-1", "museo-2", serif;
+	color: #f68428;
+}
+.blg-color-blue {
+	font-family: "museo-1", "museo-2", serif;
+	color: #37bcdf;
+}
+.blg-color-brown {
+	font-family: "museo-1", "museo-2", serif;
+	color: #663700;
+}
+.blg-color-grey {
+	font-family: "museo-1", "museo-2", serif;
+	color: #e9e8e8;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+FEATURED CONTENT 3
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.ads {
+	margin: 0 0 20px 0;
+	background: #fff;
+	height: 270px;
+	padding: 20px 20px 0 20px;
+}
+.ad1-content {
+	float: left;
+	width: 620px;
+}
+.ad2-content {
+	float: right;
+	width: 300px;
+	margin: 0 0 0 20px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+SEARCH LANDING PAGE
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.ser-leftContent {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+	height: 538px;
+}/*- Left Column Content -*/
+.ser-rightContent {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 300px;
+	padding: 20px;
+	float: right;
+	height: 538px;
+}/*- Right Column Content -*/
+.ser-wrap-title {
+	width: 602px;
+	height: 70px;
+}
+.ser-title {
+	font-family: "museo-1", "museo-2";
+	font-size: 36px;
+	color: #333;
+	font-weight: 900;
+	line-height: 30px;
+	padding: 0 20px 0px 0;
+	float: left
+}
+.ser-social {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: 0px;
+}
+.rangeslider .selector {
+	display: block;
+	float: left;
+	margin-left: 5px;
+	margin-right: 15px;
+	width: 90px;
+}
+.ui-slider-horizontal {
+	height: 0.8em;
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-corner-all {
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+.ui-widget-content {
+	background: url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #FFFFFF;
+	border: 1px solid #AAAAAA;
+	color: #222222;
+}
+.ui-widget {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+ANIMAL SEARCH RESULTS FORM
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.list-search ul {
+	padding: 0 0 1px 0;
+}
+.list-search li {
+	padding: 0 0 8px 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+ADOPTION APPLICATION
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.adoptapp-middle {
+	background-image: url(../images/layout/pm-columncheat.jpg);
+	width: 962px;
+	font-size: 14px;
+	font-family: "museo-1", "museo-2";
+	color: #000;
+	font-weight: 700;
+	padding: 20px 0;
+}
+.adoptapp-middle th {
+	padding: 0 10px 0 10px;
+	background-color: #F5F5F5;
+	text-align: right;
+	color: #333;
+	font-weight: 700;
+}
+.adoptapp-middle td {
+	padding: 0 0px 0 15px;
+}
+.adopt-app-topbar {
+	margin: auto;
+	padding: 25px 0 0 20px;
+	font-size: 28px;
+	font-family: "museo-1", "museo-2";
+	color: #333;
+	z-index: 20;
+	float: left;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+PAWSONALITY TEST LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.pmwrap {
+	float: left;
+	width: 932px;
+	background: #fff;
+	padding: 20px 20px 0px 20px;
+	margin: 20px 0 0 16px;
+}
+.pmTitle {
+	background-image: url(../images/layout/pm_quest_title.jpg);
+	width: 939px;
+	height: 120px;
+	margin: 0 0 0px 0;
+}
+.pmtopbar {
+	background-image: url(../images/layout/pm-barBG.jpg);
+	width: 932px;
+	height: 73px;
+}
+.pmtopbar-question {
+	margin: auto;
+	padding: 18px 40px 18px 40px;
+	font-size: 24px;
+	font-family: "museo-1", "museo-2";
+	color: #FFF;
+	font-weight: 700;
+	line-height: 26px;
+}
+.pmtopbar-num {
+	background-image: url(../images/layout/pm_num_icon.jpg);
+	width: 56px;
+	height: 40px;
+	float: left;
+	margin: 7px 0 0 0;
+	font-size: 34px;
+	font-family: "museo-1", "museo-2";
+	color: #FFF;
+	padding: 19px 0 0 0px;
+	font-weight: 900;
+	text-align: center;
+}
+.pm-middle {
+	width: 932px;
+	font-size: 24px;
+	font-family: "museo-1", "museo-2";
+	color: #000;
+	font-weight: 700;
+	padding: 20px 0;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+.pm-middle ul {
+	margin: 0 0 0 60px;
+	padding: 0;
+}
+.pm-middle li {
+	padding: 8px 0 0 0;
+	margin: 0;
+}
+.pm-middle a {
+	padding: 0;
+	margin: 0;
+}
+.pm-middle label {
+	padding: 0 0 0 10px;
+	margin: 0;
+}
+.pmbtmbar {
+	width: 932px;
+	height: 73px;
+}
+.progress-bar {
+	background: url(../images/layout/progressbar-of.jpg) no-repeat left center;
+	width: 494px;
+	height: 35px;
+	margin: 15px 0 0 20px;
+	float: left;
+}
+.progress-level {
+	background: url(../images/layout/progress-bar-on.jpg) no-repeat left center;
+	width: 30%; /* SET THIS TO GET THE DESIRE LEVEL */
+	height: 35px;
+}
+.pm-footertear {
+	width: 972px;
+	height: 73px;
+	background: url(../images/layout/questionnaire-footer.jpg) no-repeat left center;
+	float: left;
+	margin: 0 0 0 16px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+ANIMAL SEARCH RESULTS LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.asr-searchrefine {
+	margin: 20px 0 20px 0;
+	width: 992px;
+	background: #fff;
+	padding: 10px 0px 0px 10px;
+}/*- Top Column Content 1 -*/
+.asr-refine-list {
+	margin: 0px 0 0px 0;
+	background: #fff;
+	float: left;
+	padding: 20px 20px 20px 20px;
+	width: 300px;
+}/*- Left Column Content 2 -*/
+.asr-animal-results {
+	margin: 0px 0 20px 0;
+	background: #fff;
+	width: 622px;
+	padding: 20px 20px 0 0;
+	float: right;
+}/*- Left Column Content 3 -*/
+.asr-petmatch-results {
+	margin: 0px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px 20px 0 20px;
+	float: right;
+}/*- Left Column Content 4 -*/
+.asr-petmatch-results p {
+	font-size: 13px;
+	line-height: 15px;
+	margin-top: -15px;
+}
+.asr-sub-nav {
+	margin: 0px 0 20px 0;
+	background: none repeat scroll 0 0 #D6D6D6;
+	border: 1px solid #CCCCCC;
+	float: right;
+	padding: 10px 20px;
+	width: 600px;
+}
+.asr-wrap-animal {
+	width: 188px;
+	float: left;
+	margin-left: 19px;
+	margin-bottom: 20px;
+}
+.asr-animalname {
+	font-family: "museo-1", "museo-2";
+	font-size: 11px;
+	color: #171717;
+	font-weight: 700;
+	padding-left: 4px;
+	line-height: 18px;
+	border-right: 0px solid #CCCCCC;
+	border-left: 0px solid #CCCCCC;
+	height: 35px;
+}
+.asr-animalgender {
+	font-family: "museo-1", "museo-2";
+	font-size: 11px;
+	color: #333;
+	font-weight: 700;
+	padding-left: 4px;
+	line-height: 20px;
+	border-right: 0px solid #CCCCCC;
+	border-left: 0px solid #CCCCCC;
+}
+.asr-pm-score {
+	border: #ccc 2px dashed;
+	background-color: #FFF;
+	padding: 5px 3px 5px 3px;
+}
+.asr-pm-score img {
+	margin-top: 0px;
+}
+.asr-pm-score span {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	color: #171717;
+	font-weight: 700;
+	line-height: 10px;
+}
+.asr-pm-score strong {
+	font-family: "museo-1", "museo-2";
+	font-size: 24px;
+	color: #171717;
+	font-weight: 900;
+	line-height: 10px;
+	letter-spacing: -0.1em;
+}
+.asr-wrap-name {
+	width: 188px;
+	height: 24px;
+}
+div.asr-wrap-name .asr-name {
+	font-family: "museo-1", "museo-2";
+	font-size: 18px;
+	color: #333;
+	font-weight: 900;
+	line-height: 20px;
+	padding: 0;
+	float: left
+}
+div.asr-wrap-name .asr-distance {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: 0px;
+	color: #999;
+}
+.grey3 {
+	background-color: #FFF;
+	height: 28px;
+}
+.asr-mainImage {
+	max-width: 178px;
+	max-height: 134px;
+	z-index: 5;
+	position: relative;
+}
+.video {
+	z-index: 25;
+	position: relative;
+	left: 0px;
+	padding: 0;
+	float: right;
+	clear: both;
+}
+.resultsSearchForm {
+	margin: 0px;
+	overflow: hidden;
+}
+.resultsSearchForm .input {
+	float: left;
+	height: 0;
+	clear: none;
+	margin: 3px 3px 0 0;
+	padding: 0;
+}
+.resultsSearchForm p select {
+	width: 110px;
+	padding: 1px 0 1px 0;
+}
+.resultsSearchForm p.checkbox {
+}
+.resultsSearchForm p.checkbox label {
+	display: inline;
+	float: left;
+	font-weight: normal;
+	margin: 0 5px 0 0;
+	padding: 0 5px 0 0;
+}
+.resultsSearchForm p {
+	border: 1px solid #CCCCCC;
+	float: left;
+	margin: 0px 10px 10px 0;
+	padding: 5px;
+}
+.resultsSearchForm p label {
+	display: block;
+	float: left;
+	font-weight: bold;
+	margin: 1px 5px 0px 0;
+	padding: 0px 5px 0 5px;
+}
+.resultsSearchForm .slider .selector {
+	display: block;
+	float: left;
+	margin-left: 5px;
+	margin-right: 15px;
+	width: 90px;
+	margin-top: 4px;
+}
+.resultsSearchForm .slider input {
+	background: #F5F5F5 none repeat scroll 0 0;
+	border: 0 none;
+	float: left;
+	width: 40px;
+	margin: 2px 2px 0 0;
+}
+.resultsSearchForm .submit div {
+	float: left;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+ANIMAL PROFILE LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.ap-leftContent {
+	margin: 20px 0 5px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+}/*- Left Column Content -*/
+.ap-rightContent {
+	margin: 20px 0 0px 0;
+	background: #fff;
+	width: 300px;
+	padding: 20px;
+	float: right;
+}/*- Right Column Content -*/
+.ap-rightContent strong {
+	font-weight: 900;
+}
+/*- Right Column -*/ 
+.ap-shelterName {
+	font-size: 18px;
+	font-weight: 700;
+}
+.ap-shelterLogo {
+	width: 290px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+	margin-top: -5px;
+	padding: 5px;
+}
+.ap-shelterLogo img {
+	max-width: 290px;
+	max-height: 60px;
+}
+.ap-ad {
+	display: block;
+	height: 250px;
+	width: 300px;
+	margin-top: 20px;
+}
+.ap-phonenum {
+	color: #e52c0e;
+	font-weight: 700;
+}
+/*- Left Column -*/ 
+.ap-wrap-name {
+	width: 602px;
+	height: 40px;
+	margin: 0 0 5px 0;
+}
+div.ap-wrap-name .ap-name {
+	font-family: "museo-1", "museo-2";
+	font-size: 36px;
+	color: #333;
+	font-weight: 900;
+	line-height: 30px;
+	padding: 0 20px 0px 0;
+	float: left
+}
+div.ap-wrap-name .ap-backtosearch {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: left;
+	position: relative;
+	top: 6px;
+}
+div.ap-wrap-name .ap-next {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: 6px;
+}
+.ap-wrap-profile {
+	width: 602px;
+	margin: 0;
+	padding: 0;
+}
+div.ap-wrap-profile .ap-wrap-pro1 {
+	float: left;
+	width: 364px;
+}
+div.ap-wrap-profile .ap-wrap-pro2 {
+	float: right;
+	width: 238px;
+}
+.animalData {
+	background-image: url(../images/layout/ap-2.gif);
+	height: 234px;
+	width: 237px;
+	padding: 5px 0 0 5px;
+}
+.ap4 {
+	background-image: url("../images/layout/ap-4.gif");
+	height: 61px;
+	padding: 7px 0 0 15px;
+	width: 227px;
+}
+.pmScore {
+	background-image: url(../images/layout/ap-petmatchBanner.jpg);
+	height: 79px;
+	width: 632px;
+	float: left;
+	margin: 10px 0 5px 1px;
+}
+.pmNum {
+	float: right;
+	margin: 27px 0 0 0;
+	font-size: 48px;
+	color: #FFF;
+	font-family: "museo-1", "museo-2";
+	font-weight: 700;
+	letter-spacing: -4px;
+	width: 140px;
+	text-align: left;
+}
+.pmNum2 {
+	float: right;
+	margin: 24px 7px 0 0;
+	font-size: 24px;
+	color: #FFF;
+	font-family: "museo-1", "museo-2";
+	font-weight: 700;
+	text-align: right;
+	line-height: 18px;
+}
+.pmNum2 a.learnMore {
+	color: #9c5823;
+	float: right;
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: underline;
+	padding: 0;
+}
+.ap-mainImage {
+	max-width: 360px;
+	max-height: 239px;
+}
+.ap-thumbnails {
+	max-width: 63px;
+	max-height: 45px;
+	vertical-align: middle;
+	padding: 0 4px 0 0;
+}
+.ap-animalData ul {
+	padding: 0px;
+	margin: 0;
+}
+.ap-animalData li {
+	font-family: "museo-1", "museo-2";
+	font-size: 14px;
+	padding: 2px 0 1px 10px;
+	margin: 0;
+}
+.ap-animalData li strong {
+	font-weight: 900;
+}
+.grey {
+	background-color: #e0e0e0;
+	height: 23px;
+}
+.grey2 {
+	background-color: #e0e0e0;
+	height: 22px;
+}
+.ap-wrap-thumbs {
+	height: 46px;
+	width: 344px;
+	background-image: url(../images/layout/ap-3.gif);
+	padding: 10px;
+}
+.ap-AddtoFavorites a {
+	color: #0a7aab;
+	font-weight: 900;
+	font-size: 18px;
+	font-family: "museo-1", "museo-2";
+	padding: 0;
+}
+.ap-icon-fav {
+	margin-right: 4px;
+	margin-top: 1px;
+}
+.ap-list {
+	display: inline;
+}
+.ap-list li {
+	float: left;
+	margin: 0;
+	padding: 0 5px 0 0px;
+}
+/*- ICONS -*/ 
+.list-icons {
+	display: inline;
+}
+.list-icons li {
+	float: left;
+	margin: 0;
+	padding: 0 1px 0 1px;
+}
+.icon-legend {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+}
+.icon-no-cats {
+	background: url(../images/layout/icon-no-cats.jpg) 0 0 no-repeat;
+	width: 46px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-no-dogs {
+	background: url(../images/layout/icon-no-dogs.jpg) 0 0 no-repeat;
+	width: 46px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-no-kids {
+	background: url(../images/layout/icon-no-kids.jpg) 0 0 no-repeat;
+	width: 46px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-cuddly {
+	background: url(../images/layout/icon-cuddly.jpg) 0 0 no-repeat;
+	width: 42px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-calm {
+	background: url(../images/layout/icon-calm.jpg) 0 0 no-repeat;
+	width: 42px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-active {
+	background: url(../images/layout/icon-active.jpg) 0 0 no-repeat;
+	width: 42px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-curious {
+	background: url(../images/layout/icon-curious.jpg) 0 0 no-repeat;
+	width: 42px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-playful {
+	background: url(../images/layout/icon-playful.jpg) 0 0 no-repeat;
+	width: 42px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-social {
+	background: url(../images/layout/icon-social.jpg) 0 0 no-repeat;
+	width: 42px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+.icon-loner {
+	background: url(../images/layout/icon-loner.jpg) 0 0 no-repeat;
+	width: 42px;
+	height: 20px;
+	display: block;
+	overflow: hidden;
+}
+/* //////////////////////////// Other Pets Tabbed Box ////////////////
+////////////////////////////////////////////////////////////////////*/
+
+
+div.wrap-otherpets {
+	width: 642px;
+	float: left;
+}
+ul.other {
+	text-align: center;
+	margin: 5px 0 5px 0;
+	font-family: "museo-1", "museo-2";
+	font-weight: 700;
+	font-size: 14px;
+	list-style-type: none;
+	padding: 4px 4px 0px 0px;
+}
+ul.other li {
+	display: inline;
+}
+ul.other li.selected, li.tab, {
+background-color: #fff;
+}
+ul.other li.selected a, li.tab a {
+	background-color: #fff;
+	color: #000;
+	position: relative;
+	padding-top: 9px;
+	min-width: 112px;
+	display: block;
+	float: left;
+}
+ul.other li a {
+	padding: 9px 4px;
+	background-color: #2ba9bd;
+	color: #fff;
+	margin-right: 5px;
+	text-decoration: none;
+}
+ul.other a:hover {
+	background: #fff;
+	color: #000;
+}
+div.wrap-otherpets .op-content {
+	width: 604px;
+	padding: 20px;
+	background-color: #fff;
+	float: left;
+}
+.op-image {
+	max-width: 179px;
+	max-height: 115px;
+	border: #ccc 4px dashed;
+	vertical-align: middle;
+	padding: 2px;
+	margin: 0 0 15px 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+SIGN-IN PAGE
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.col1 {
+	float: left;
+	width: 324px;
+	margin: 0 20px 0 0;
+	padding: 0 10px 0 10px;
+}
+.col1 h3 {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.col1 .sub-btn, .col2 .sub-btn {
+	float: left;
+	width: 324px;
+	margin: 20px 0 0 0;
+}
+.col1-box {
+	float: left;
+	background: #e0e0e0;
+	width: 324px;
+	margin: 20px -10px;
+	padding: 0 10px;
+}
+.col1-box2 {
+	float: left;
+}
+.col2 {
+	float: left;
+	background: #e0e0e0;
+	width: 324px;
+	margin: 0 20px 20px 0;
+	padding: 0 20px 20px 20px;
+}
+.col2 h3 {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.col3 {
+	float: left;
+	width: 216px;
+}
+.col4 {
+	float: left;
+	width: 251px;
+	margin: -20px 20px 0 0;
+	padding: 0 20px 0 20px;
+}
+.col4 h3 {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.col4 .sub-btn, .col2 .sub-btn {
+	float: left;
+	width: 261px;
+	margin: 20px 0 0 0;
+}
+.col4-box {
+	float: left;
+	background: #e0e0e0;
+	width: 261px;
+	margin: 20px -10px;
+	padding: 0 10px;
+}
+.col4-box2 {
+	float: left;
+}
+.col5 {
+	float: left;
+	background: #e0e0e0;
+	width: 251px;
+	margin: -20px 0 0 0;
+	padding: 0 20px 20px 20px;
+}
+.col5 h3 {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.col6 {
+	float: left;
+	width: 134px;
+	margin: 0 0 15px 0;
+	padding: 0 20px 0 20px;
+}
+.col6 h3 {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.col6 .sub-btn, .col2 .sub-btn {
+	float: left;
+	width: 174px;
+	margin: 0px 0 0 0;
+}
+.col7 {
+	float: left;
+	background: #e0e0e0;
+	width: 564px;
+	margin: 0 0 15px 0;
+	padding: 10px 20px 12px 20px;
+}
+.col7 h3 {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.col7 .sub-btn, .col2 .sub-btn {
+	float: left;
+	width: 564px;
+	margin: 0px 0 0 0;
+}
+.col8 {
+	float: left;
+	background: #FFF;
+	width: 243px;
+	margin: 20px 0 0 0;
+	padding: 0 20px 20px 20px;
+	border: dashed #CCC 4px;
+}
+.col8 h3 {
+	margin-left: -24px;
+	margin-right: -24px;
+	margin-top: -4px;
+}
+.col9 {
+	float: left;
+	width: 600px;
+	margin: 0 20px 0 0;
+	padding: 0 10px 0 10px;
+}
+.welcome {
+	margin-bottom: 10px;
+	font-size: 36px;
+	color: #333;
+	font-weight: 900;
+	font-family: "museo-1", "museo-2";
+}
+.list-form li {
+	margin: 10px 0;
+}
+.list-form2 li {
+	margin: 12px 0;
+}
+.list-form label {
+	display: block;
+}
+.list-sum li {
+	margin: 10px 0;
+}
+.list-sum label {
+	display: block;
+}
+.list-sum .total {
+	background: #fff;
+	margin: 0 -10px 10px -10px;
+	padding: 8px;
+}
+.list-sum .btn-edit {
+	display: inline-block;
+	margin: 0 0 10px -10px;
+}
+.list-questions {
+	margin: 0 0 20px 0;
+}
+.list-questions li {
+	margin: 5px 0;
+}
+.list-questions-check {
+	background: #e0e0e0;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+}
+.list-questions-check li {
+	margin: 8px 0;
+}
+.list-subtotal {
+	float: right;
+	margin: 20px 0;
+}
+.list-subtotal li {
+	float: left;
+}
+.subtotal {
+	background: #e0e0e0;
+	padding: 8px 15px;
+}
+.list-donation-options {
+	padding: 20px;
+}
+.list-donation-options li {
+	margin: 0 0 15px 0;
+}
+.list-donation {
+	float: left;
+	width: 300px;
+	padding: 0 20px 20px 20px;
+}
+.list-donation li {
+	margin: 0 0 8px 0;
+}
+.list-donation li:last-child {
+	margin: 0;
+}
+.list-summary li {
+	margin: 0 0 10px 0;
+}
+.list-summary .total {
+	background: #e0e0e0;
+	padding: 8px;
+}
+.list-note {
+	margin: 0 0 20px 0;
+	padding: 0 10px;
+}
+.input-rc-username, .input-nu-first, .input-nu-last, .input-rc-email, .input-nu-email, .input-nu-postalcode, .input-rc-password, .input-nu-username, .input-nu-password, .input-nu-confirm {
+	width: 314px;
+	margin-top: 4px;
+	padding: 8px 5px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.input-nu2-first, .input-nu2-last, .input-nu2-email, .input-nu2-postalcode {
+	width: 260px;
+	margin-top: 4px;
+	padding: 8px 5px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.edit-username, .edit-first, .edit-last, .edit-zip, .edit-mobile, .edit-email, .edit-exist-password, .edit-re-enter-password, .edit-new-password, .edit-confirm {
+	width: 240px;
+	margin-top: 4px;
+	padding: 8px 5px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Sign-in Forms
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.inputbar { /*padding: 2px 10px;*/
+	border: #a5a5a5 1px solid;
+}
+.inputbar-findapet {
+	padding: 3px 10px;
+	border: #a5a5a5 1px solid;
+	width: 125px;
+}
+.inputbar-email {
+	padding: 3px 10px;
+	border: #a5a5a5 1px solid;
+}
+.sortbar {
+	padding: 2px 5px;
+	border: #a5a5a5 1px solid;
+}
+.inputbox {
+	padding: 2px 10px;
+	border: #a5a5a5 1px solid;
+}
+.input-check {
+	float: left;
+	margin: 4px 10px 10px 0;
+}
+.question-radio {
+	float: left;
+	margin: 4px 10px 0 0;
+}
+.question-check {
+	float: left;
+	margin: 4px 10px 0 0;
+}
+.input-note {
+	width: 326px;
+	margin: 10px 0;
+	padding: 5px;
+	display: block;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Activation Page
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.act-wrap {
+	width: 728px;
+	margin: 0px 20px 0px 0;
+	float: left;
+}
+.act-wrap strong {
+	font-weight: 900;
+}
+.act-adopt {
+	width: 209px;
+	margin: 5px 20px 10px 0;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+.act-shop {
+	width: 209px;
+	margin: 5px 20px 10px 0;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+.act-protect {
+	width: 209px;
+	margin: 5px 0 10px 0;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+.act-title {
+	font-size: 24px;
+	color: #333;
+	font-weight: 900;
+	font-family: "museo-1", "museo-2";
+	padding: 0 0 10px 0px;
+	margin: -20px 0 0 0;
+	float: left;
+}
+.act-checkbox {
+	float: left;
+	margin: 4px 10px 0 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+Reviews
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.review {
+	margin: 40px 0 0 0;
+}
+.review-rating li {
+	margin-right: 5px;
+	display: inline;
+}
+.review-rating .star-rating-inline {
+	margin: 5px 0 -1px 0;
+}
+.viewreview {
+	margin: 10px 0 0 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+ACCOUNT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.fav-img {
+	max-width: 174px;
+	float: left;
+	padding: 10px 0 0 0;
+	max-height: 139px;
+}
+.savedsearch {
+	padding: 4px 0;
+}
+.savedsearch li {
+	padding: 2px 0;
+}
+.savedsearch li strong {
+	font-weight: 900;
+}
+.savedsearch span {
+	margin-top: 4px;
+}
+.act-pmquestion {
+	background: #FFF;
+	width: 556px;
+	margin: 0 0 15px 0;
+	padding: 10px 20px 12px 20px;
+	border: #ccc 4px dashed
+}
+.act-pmquestion-grey {
+	background: #F0F0F0;
+	width: 564px;
+	margin: 0 0 15px 0;
+	padding: 10px 20px 12px 20px;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+FOOTER
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.wrap-footer {
+	background: #d5e6eb url('../images/2015/footer_bg.jpg') repeat-x top right;
+    border-bottom: 1px solid #6cb5c9;
+	float: left;
+	width: 100%;
+	height: 320px;
+	margin: 60px 0 0 0;
+	padding: 10px 0;
+}
+.wrap-footer, .push {
+	height: 320px;
+}
+.list-footer {
+	float: left;
+	width: 160px;
+}
+.wrap-footer .list-media {
+	display: inline-block;
+    margin-top: -30px;
+}
+.list-media li {
+	float: left;
+	margin: 15px 20px 20px 0;
+}
+.list-newsletter {
+	display: inline;
+}
+.list-newsletter li {
+	float: left;
+	margin: 15px 20px 20px 0;
+}
+#btn-twitter {
+	background: url(../images/layout/icon-twitter.png) 0 0 no-repeat;
+	width: 44px;
+	height: 46px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#btn-facebook {
+	background: url(../images/layout/icon-facebook.png) 0 0 no-repeat;
+	width: 44px;
+	height: 46px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#btn-youtube {
+	background: url(../images/layout/icon-youtube.png) 0 0 no-repeat;
+	width: 44px;
+	height: 46px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#btn-petangoapp {
+	background: url(../images/layout/icon-petangoapp.png) 0 0 no-repeat;
+	width: 44px;
+	height: 46px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#btn-livechat {
+	background: url(../images/layout/icon-livechat.png) 0 0 no-repeat;
+	width: 44px;
+	height: 46px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#btn-mediamsg {
+	background: url(../images/layout/icon-mediamsg.png) 0 0 no-repeat;
+	width: 300px;
+	height: 46px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#btn-twitter:hover, #btn-facebook:hover, #btn-youtube:hover, #btn-petangoapp:hover, #btn-livechat:hover {
+	background-position: 0 2px;
+}
+.newsletter {
+	float: right;
+	width: 735px;
+	margin: 15px 0 0 0;
+	padding: 5px;
+}
+.signup-btn {
+	float: right;
+}
+.copyright {
+	float: left;
+	margin: 0 0 0 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+EFFECTS AND MODIFIERS
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.btn-alert {
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+	display: inline-block;
+	float: left;
+	overflow: hidden;
+	width: 85px;
+}
+a.btn-alert {
+	background: #2ba9bd;
+	padding: 8px 0 8px 5px;
+	font-family: "museo-1", "museo-2";
+	border: 0;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 900;
+	cursor: pointer;
+}
+.btn {
+	float: left;
+	background: #2ba9bd;
+	padding: 8px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	font-family: "museo-1", "museo-2";
+}
+.btn-blg {
+	float: left;
+	background: #2ba9bd;
+	padding: 5px 0;
+	width: 300px;
+	font-family: arial;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+}
+.btn2 {
+	float: left;
+	background: #f27b27;
+	padding: 8px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.checkout {
+	background: #67db00;
+}
+.checkout:hover {
+	background: #00aa38;
+}
+.smbtn {
+	float: left;
+	background: #2ba9bd;
+	padding: 6px 0px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	font-size: 19px;
+}
+.btn:hover, .btn-blg:hover, .btn-moredetails:hover, .btn-ssr_search:hover, .btn-search-findapet:hover, .btn-blg-search:hover, .btn-signup:hover, .smbtn:hover, .selected {
+	background: #16535b;
+	color: #FFF;
+}
+.btn-blg-read-more:hover {
+	background: #16535b;
+}
+.btn2:hover {
+	background: #f27b27;
+}
+.smfluid {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.fluid {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+a.smbtn {
+	font-size: 19px;
+}
+.btn-search-findapet {
+	float: left;
+	background: #2ba9bd;
+	padding: 4px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.btn-moredetails {
+	float: right;
+	background: #2ba9bd;
+	padding: 12px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.btn-ssr_search {
+	float: right;
+	background: #2ba9bd;
+	padding: 8px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.btn-blg-search {
+	float: right;
+	background: #2ba9bd;
+	padding: 4px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.btn-blg-read-more {
+	float: right;
+	background: #2da8bc;
+	padding: 7px 0;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+.btn-signup {
+	float: left;
+	background: #2ba9bd;
+	padding: 4px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border: 0 none;
+}
+.mar0 {
+	margin: 0;
+}
+.mar5-right {
+	margin-right: 5px;
+}
+.mar10-right {
+	margin-right: 10px;
+}
+.mar5-bot {
+	margin-bottom: 5px;
+}
+.mar10-bot {
+	margin-bottom: 10px;
+}
+.mar20-bot {
+	margin-bottom: 20px;
+}
+.mar80-bot {
+	margin-bottom: 80px;
+}
+.mar5-right {
+	margin-right: 5px;
+}
+.mar10-right {
+	margin-right: 10px;
+}
+.mar20-right {
+	margin-right: 20px;
+}
+.mar30-right {
+	margin-right: 30px;
+}
+.mar40-right {
+	margin-right: 40px;
+}
+.mar40-bot {
+	margin-bottom: 40px;
+}
+.mar10-left {
+	margin-left: 10px;
+}
+.mar20-left {
+	margin-left: 20px;
+}
+.mar25-left {
+	margin-left: 25px;
+}
+.mar30-left {
+	margin-left: 30px;
+}
+.mar40-left {
+	margin-left: 40px;
+}
+.mar60-left {
+	margin-left: 60px;
+}
+.mar80-left {
+	margin-left: 80px;
+}
+.mar100-left {
+	margin-left: 100px;
+}
+.neg20-left {
+	margin-left: -20px;
+}
+.mar3-top {
+	margin-top: 3px;
+}
+.mar5-top {
+	margin-top: 5px;
+}
+.mar10-top {
+	margin-top: 10px;
+}
+.mar15-top {
+	margin-top: 15px;
+}
+.mar20-top {
+	margin-top: 20px;
+}
+.mar25-top {
+	margin-top: 25px;
+}
+.mar40-top {
+	margin-top: 40px;
+}
+.neg20-top {
+	margin-top: -20px;
+}
+.neg40-top {
+	margin-top: -40px;
+}
+.neg14-top {
+	margin-top: -14px;
+}
+.neg5-top {
+	margin-top: -5px;
+}
+.neg0-top {
+	margin-top: 0px;
+}
+.floatRight {
+	float: right;
+}
+.w90 {
+	width: 90px;
+}
+.w116 {
+	width: 126px;
+}
+.w126 {
+	width: 126px;
+}
+.w138 {
+	width: 138px;
+}
+.w172 {
+	width: 172px;
+}
+.w184 {
+	width: 184px;
+}
+.w188 {
+	width: 188px;
+}
+.w196 {
+	width: 196px;
+}
+.w206 {
+	width: 206px;
+}
+.w216 {
+	width: 216px;
+}
+.w218 {
+	width: 216px;
+}
+.w300 {
+	width: 300px;
+}
+.w326 {
+	width: 326px;
+}
+.w452 {
+	width: 452px;
+}
+.w472 {
+	width: 472px;
+}
+.w580 {
+	width: 580px;
+}
+.w604 {
+	width: 604px;
+}
+.w620 {
+	width: 620px;
+}
+.w688 {
+	width: 688px;
+}
+.w728 {
+	width: 728px;
+}
+.w964 {
+	width: 964px;
+}
+.error {
+	background: #ef2200;
+	padding: 10px;
+	display: block;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+FORMS
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.inputbar2 {
+	padding: 2px 10px;
+	border: #a5a5a5 1px solid;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.sortbar2 {
+	padding: 2px 5px;
+	border: #a5a5a5 1px solid;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.inputbox2 {
+	padding: 2px 10px;
+	border: #a5a5a5 1px solid;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+.input-check2 {
+	float: left;
+	margin: 4px 10px 10px 0;
+}
+.question-radio2 {
+	float: left;
+	margin: 4px 10px 0 0;
+	font-size: 6px;
+}
+.question-check2 {
+	float: left;
+	margin: 4px 10px 0 0;
+}
+.input-note2 {
+	width: 326px;
+	margin: 10px 0;
+	padding: 5px;
+	display: block;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8p
+}
+.clearfloat {
+	clear: both;
+}
+.fieldset2 {
+	width: 620px;
+	background: #e0e0e0;
+	padding: 0 0 20px 0;
+	font-family: "museo-1", "museo-2";
+}
+.label2 {
+	float: left;
+	text-align: right;
+	margin-right: 5px;
+	display: block;
+	font-size: 6px;
+}
+.login2 {
+	float: right;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+PETMATCH LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+.pm-leftContentPetMatch {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+	height: 1110px;
+}/*- Left Column Content for PetMatch -*/
+.pm-leftContent {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+	height: 925px;
+}/*- Left Column Content -*/
+.pm-rightContent {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 300px;
+	padding: 20px;
+	float: right;
+	height: 925px;
+}/*- Right Column Content -*/
+/*- Right Column -*/ 
+.video_list li {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #DDDDDD;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.video_list {
+	list-style-type: none;
+}
+/*- Left Column -*/ 
+.pm-wrap-title {
+	width: 602px;
+	height: 80px;
+}
+div.pm-wrap-title .pm-title {
+	font-family: "museo-1", "museo-2";
+	font-size: 36px;
+	color: #333;
+	font-weight: 900;
+	line-height: 30px;
+	padding: 0 20px 0px 0;
+	float: left
+}
+div.pm-wrap-title .pm-social {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: 0px;
+}
+.pm-petcounter {
+	display: none;
+	float: right;
+	font-family: "museo-1", "museo-2", serif;
+	color: #333;
+	font-weight: bold;
+}
+.pm-petcounter h6 strong {
+	font-family: "museo-1", "museo-2", serif;
+	font-size: 22px;
+	color: #ed6d17;
+	font-weight: bold;
+}
+.pm-wrap-signup {
+	width: 602px;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+div.pm-wrap-signup .pm-wrap-form {
+	float: left;
+	width: 364px;
+}
+div.pm-wrap-signup .pm-wrap-spotlight {
+	float: right;
+	width: 238px;
+	padding-top: 0;
+}
+.pm-col2 {
+	float: left;
+	background: #e0e0e0;
+	width: 324px;
+	margin: 0 20px 20px 0;
+	padding: 0 20px 20px 20px;
+}
+.pm-col2 h3 {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.pm-spotlight {
+	padding: 0 0 0 20px;
+}
+.pm-spotlight ul {
+	padding: 0;
+	margin: 0;
+}
+.pm-spotlight li {
+	font-family: "museo-1", "museo-2";
+	font-size: 14px;
+	padding: 0 0 1px 10px;
+	margin: 0;
+}
+.pm-spotlight li strong {
+	font-weight: 900;
+}
+.pm-membersignin {
+	margin: 0 0 0 50px;
+}
+/*- Shelter Logos -*/ 
+.pm-wrap-shelters {
+	background: #fff;
+	width: 1004px;
+	float: left;
+}
+.pm-shelterlogos {
+	border: none;
+}
+.pm-wrap-instructions {
+	margin: 0;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+SHELTER PROFILE LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sp-leftContent-shelterinfo {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+}/*- Left Column Content 1 -*/
+.sp-leftContent-availablepets {
+	margin: 0px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+}/*- Left Column Content 2 -*/
+.sp-leftContent-adoptionprocess {
+	margin: 0px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+}/*- Left Column Content 3 -*/
+.sp-rightContent {
+	margin: 20px 0 0px 0;
+	background: #fff;
+	width: 300px;
+	padding: 20px;
+	float: right;
+}/*- Right Column Content -*/
+.sp-rightContent strong {
+	font-weight: 900;
+}
+/*- Right Column -*/ 
+.sp-shelterName {
+	font-size: 18px;
+	font-weight: 700;
+}
+.sp-shelterLogo {
+	width: 290px;
+	background-color: #FFF;
+	margin-bottom: 15px;
+	margin-top: -5px;
+	padding: 5px;
+}
+.sp-shelterLogo img {
+	max-width: 290px;
+	max-height: 60px;
+}
+/*- Left Column -*/ 
+.sp-wrap-name {
+	width: 602px;
+	height: 40px;
+}
+.sp-wrap-btns {
+	width: 602px;
+	height: 40px;
+}
+.sp-prevnext {
+	width: 100px;
+	height: 40px;
+	float: right;
+}
+div.p-wrap-name .sp-name {
+	font-family: "museo-1", "museo-2";
+	font-size: 36px;
+	color: #333;
+	font-weight: 900;
+	line-height: 30px;
+	padding: 0 20px 0px 0;
+	float: left;
+}
+div.sp-wrap-btns .sp-backtosearch {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: left;
+	position: relative;
+	top: 5px;
+}
+div.sp-wrap-btns .sp-previous {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: left;
+	position: relative;
+	top: 5px;
+}
+div.sp-wrap-btns .sp-next {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: 5px;
+}
+.sp-shelterinfo ul {
+	padding: 0px;
+	margin: 0;
+}
+.sp-shelterinfo li {
+	font-family: "museo-1", "museo-2";
+	font-size: 14px;
+	padding: 2px 0 1px 0;
+	margin: 0;
+}
+.sp-shelterinfo li strong {
+	font-weight: 900;
+}
+div.wrap-availablepets {
+	width: 600px;
+	float: left;
+}
+div.wrap-availablepets .availablepets-content {
+	width: 600px;
+	padding: 15px 0px 0px 0;
+	background-color: #fff;
+	float: left;
+}
+.availablepets-image {
+	max-width: 179px;
+	max-height: 115px;
+	border: #ccc 4px dashed;
+	vertical-align: middle;
+	padding: 2px;
+	margin: 0 5px 15px 0;
+}
+.gallery {
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+.gallery img {
+	float: left;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+ul.gallery li,  ul.gallery li h2,  ul.gallery li h2 a {
+	width: 138px;
+	height: 110px;
+}
+ul.gallery li {
+	float: left;
+	border: 1px solid #dddddd;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+}
+ul.gallery li h2 {
+	text-indent: -9999px;
+}
+ul.gallery li h2 a {
+	display: block;
+}
+ul.gallery p span {
+	display: none;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+SHELTER SEARCH RESULTS LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.ssr-leftContent-sheltersearch {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 962px;
+	padding: 20px 20px 10px 20px;
+	float: left;
+}/*- Left Column Content 1 -*/
+.ssr-leftContent-sub-search {
+	margin: 0px 0 20px 0;
+	background: none repeat scroll 0 0 #D6D6D6;
+	border: 1px solid #CCCCCC;
+	float: left;
+	padding: 10px 20px;
+	width: 600px;
+}/*- Left Column Content 2 -*/
+.ssr-leftContent-sheltersearchresults {
+	margin: 0px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: right;
+}/*- Left Column Content 3 -*/
+.ssr-rightContent {
+	margin: 0;
+	background: #fff;
+	width: 300px;
+	padding: 20px;
+	float: left;
+}
+/*- Right Column Content -*/
+.ssr-rightContent strong {
+	font-weight: 900;
+}
+/*- Right Column -*/ 
+.ssr-google-map {
+	width: 299px;
+	height: 384px;
+	margin-top: 20px;
+}
+.ssr-ad {
+	height: 250px;
+	width: 300px;
+	margin-top: 20px;
+}
+/*- Left Column -*/ 
+.ssr-list-search-1 {
+	list-style-type: none;
+	width: 600px;
+	font-family: "museo-1", "museo-2";
+	font-weight: 900;
+	font-size: 14px;
+}
+.ssr-list-search-1 li {
+	float: left;
+	padding-right: 20px;
+}
+.ssr-list-search-2 {
+	list-style-type: none;
+	width: 600px;
+	font-family: "museo-1", "museo-2";
+	font-weight: 900;
+	font-size: 14px;
+}
+.ssr-list-search-2 li {
+	float: left;
+	padding-right: 105px;
+}
+.ssr-sub-nav {
+	margin: 0px 0 20px 0;
+	background: none repeat scroll 0 0 #D6D6D6;
+	border: 1px solid #CCCCCC;
+	float: left;
+	padding: 10px 20px;
+	width: 600px;
+}
+.ssr-displaygroup-sort {
+	width: 600px;
+	float: left;
+}
+.ssr-group-sort {
+	width: 225px;
+	float: right;
+	text-align: right;
+}
+.ssr-shelter {
+	overflow: auto;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.ssr-location {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 23px;
+	height: 32px;
+	padding-top: 3px;
+	font-family: "museo-1", "museo-2";
+	font-weight: 900;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+	background: #f68428 url(../images/layout/overlay-map_icon.png) no-repeat top left;
+}
+.ssr-location.selected {
+	background-color: #f68428;
+}
+.ssr-col_1 {
+	float: left;
+	width: 280px;
+	margin-left: 30px;
+}
+.ssr-col_2 {
+	float: left;
+	width: 190px;
+	margin-left: 10px;
+}
+.ssr-more_details {
+	float: right;
+}
+.ssr-color-black {
+	font-family: "museo-1", "museo-2", serif;
+	color: #333;
+}
+.ssr-color-green {
+	font-family: "museo-1", "museo-2", serif;
+	color: #a9b93c;
+}
+.ssr-color-orange {
+	font-family: "museo-1", "museo-2", serif;
+	color: #f68428;
+}
+.ssr-color-blue {
+	font-family: "museo-1", "museo-2", serif;
+	color: #37bcdf;
+}
+.ssr-color-brown {
+	font-family: "museo-1", "museo-2", serif;
+	color: #663700;
+}
+.ssr-color-grey {
+	font-family: "museo-1", "museo-2", serif;
+	color: #e9e8e8;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+LOST PETS LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+
+.lp-leftContent {
+	margin: 20px 0 0px 0;
+	background: #fff;
+	width: 280px;
+	padding: 20px;
+	float: left;
+}/*- Left Column Content -*/
+.lp-rightContent {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 622px;
+	padding: 20px;
+	float: right;
+}/*- Right Column Content -*/
+.lp-leftContent strong {
+	font-weight: 900;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////
+BLOG LAYOUT
+////////////////////////////////////////////////////////////////////////////////////////// */
+#clear {
+	clear: both;
+}
+.blg-leftContent {
+	margin: 20px 0 20px 0;
+	background: #fff;
+	width: 602px;
+	padding: 20px;
+	float: left;
+	border-bottom: 7px solid #2ba9bd;
+}/*- Left Column Content -*/
+.blg-leftContentBlogArticle {
+	margin: 0 0 20px 0;
+	background: #fff;
+	width: 640px;
+	float: left;
+	box-shadow: 3px 3px 4px #b8b8b8;
+	border-left: #bcbcbc solid 1px;
+	border-right: #bcbcbc solid 1px;
+	border-top: #bcbcbc solid 1px;
+	border-bottom: #717171 solid 3px;
+}/*- Left Column Content 1 -*/
+.blg-rightContent {
+	margin: 20px 0 0px 0;
+	background: #fff;
+	width: 300px;
+	padding: 20px;
+	float: right;
+}/*- Right Column Content -*/
+.blg-rightContent strong {
+	font-weight: 900;
+}/*- Right Column Content -*/
+/*- Right Column -*/ 
+.blg-search {
+	display: none;
+	width: 300px;
+	height: 80px;
+	margin-bottom: 20px;
+}
+.blg-search-list {
+	display: none;
+	list-style-type: none;
+	width: 300px;
+	font-family: "museo-1", "museo-2";
+	font-weight: 900;
+	font-size: 14px;
+	margin: 20px 0 10px 0;
+}
+.blg-search-list li {
+	display: none;
+	float: left;
+	padding-right: 5px;
+}
+.blg-search p {
+	display: none;
+	font-family: "museo-1", "museo-2";
+}
+.blg-recent-posts {
+	width: 300px;
+	min-height: 200px;
+	margin-bottom: 45px;
+}
+.blg-recent {
+	width: 290px;
+	background-color: #FFF;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	font-family: "arial";
+	font-size: 15px;
+}
+.blg-recent li {
+	border-bottom: dashed 1px #CCC;
+	padding-bottom: 2px;
+}
+.blg-recent li a {
+	color: #6e6e6e;
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.blg-recent li a:hover {
+	color: #F60;
+}
+.blg-viewMore {
+	background: #2ba9bd;
+	padding: 8px 0;
+	width: 300px;
+}
+.blg-category-posts {
+	width: 300px;
+	height: 250px;
+	margin-bottom: 45px;
+}
+.blg-categories {
+	width: 290px;
+	background-color: #FFF;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	font-family: "arial";
+	font-size: 15px;
+}
+.blg-categories li {
+	border-bottom: dashed 1px #CCC;
+	padding-bottom: 2px;
+}
+.blg-categories li a {
+	color: #6e6e6e;
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.blg-categories li a:hover {
+	color: #F60;
+}
+.blg-archives {
+	width: 290px;
+	background-color: #FFF;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	font-family: "arial";
+	font-size: 15px;
+}
+.blg-archives li {
+	border-bottom: dashed 1px #CCC;
+	padding-bottom: 2px;
+}
+.blg-archives li a {
+	color: #6e6e6e;
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+.blg-archives li a:hover {
+	color: #F60;
+}
+.blg-twitterfeed {
+	width: 300px;
+	margin-bottom: 15px;
+}
+.twit-div {
+	width: 290px;
+	height: 200 px;
+	background: #fff;
+	padding: 5px 0 5px 0;
+}
+ul#twitter_update_list {
+	list-style: none;
+	width: 290px;
+	font-size: 14px;
+	width: 290px;
+	font-family: "museo-1", "museo-2";
+}
+ul#twitter_update_list li {
+	margin: 5px 0 5px 0;
+	padding: 5px;
+	color: #333;
+	font-family: "museo-1", "museo-2";
+	font-size: 14px;
+}
+/*- Left Column -*/ 
+.blg-wrap-name {
+	width: 602px;
+	height: 40px;
+}
+.blg-wrap-btns {
+	width: 602px;
+	height: 40px;
+}
+.blg-prevnext {
+	width: 100px;
+	height: 40px;
+	float: right;
+}
+div.p-wrap-name .blg-name {
+	font-family: "museo-1", "museo-2";
+	font-size: 36px;
+	color: #333;
+	font-weight: 900;
+	line-height: 30px;
+	padding: 0 20px 0px 0;
+	float: left;
+}
+div.blg-wrap-btns .blg-previous {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: left;
+	position: relative;
+	top: 5px;
+}
+div.blg-wrap-btns .blg-next {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: 5px;
+}
+.blg-blogslist ul {
+	padding: 0px;
+	margin: 0;
+}
+.blg-blogslist li {
+	font-family: "museo-1", "museo-2";
+	font-size: 14px;
+	padding: 2px 0 1px 0;
+	margin: 0;
+}
+.blg-blogslist li strong {
+	font-weight: 900;
+}
+.blg-articleContainer {
+	width: 599px;
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.blg-img {
+	float: left;
+	width: 250px;
+	margin-right: 15px;
+}
+.blg-intro-text {
+	float: right;
+	width: 325px;
+}
+.blg-intro-text h9 {
+	font: 24px "museo-1", "museo-2", serif;
+	color: #2ba9bd;
+	font-weight: 500;
+	display: block;
+}
+.blg-intro-text p {
+	display: inline;
+}
+.blg-social {
+	font-family: "museo-1", "museo-2";
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: 0px;
+}
+
+/*
+ 
+:first-child+html div.center-photo-box-2 div.inner-video-box, 
+ 
+ html div.center-photo-box-2 div.inner-video-box  {
+	top: -100px;
+}
+*/
+ 
+.btn, .btn2, .header, .list-header, .smbtn, .tagline, .tagline li, .tk-museo, a, h1, h2, h3, h4, h5, {
+font-family:"museo-1", "museo-2", serif;
+}
+.body, p {
+	font-family: helvetica, sans-serif;
+}
+/*
+ 
+:first-child+html div.center-photo-box-2 div.inner-video-box, 
+ 
+ html div.center-photo-box-2 div.inner-video-box  {
+	top: -100px;
+}
+*/
+ 
+div.outer-photo-box {
+	border: 0px solid #D2D2D1;
+	padding: 4px 0 0 0;
+	margin: 0px 0px 0 0px;
+	width: 188px;
+	height: 138px;
+	float: left;
+	background-color: #F3F3F3;
+}
+div.preview-outer-photo-box {
+	background-color: #cccccc;
+	height: 132px;
+	display: table-cell;
+	vertical-align: middle;
+}
+div.center-photo-box-1 {
+	display: table;
+	position: relative;
+	height: 134px;
+	width: 188px;
+}
+div.center-photo-box-2 {
+	width: 188px;
+	height: 134px;
+	text-align: center;
+ #position: absolute;
+#top: 50%;
+	display: table-cell;
+	vertical-align: middle;
+}
+div.inner-photo-box {
+	text-align: center;
+	display: inline;
+	visibility: visible;
+	zoom: 1;
+	position: relative;
+#top: -50%;
+	height: 134px;
+}
+div.inner-photo-box img.pet-image {
+	margin: 0px;
+	max-width: 178px;
+	max-height: 134px;
+}
+div.photo-box img#enlarge-photo {
+	position: absolute;
+	right: 4px;
+	bottom: 4px;
+	margin: 0px !important;
+}
+.thumbs {
+	height: 47px;
+}
+.wrap .wraptocenter {
+	height: 142px;
+	width: 188px;
+	border: #e0e0e0 0px solid;
+	padding: 0px;
+	background-color: #f3f3f3;
+}
+.wraptocenter {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+ width: ...;
+ height: ...;
+}
+.wraptocenter * {
+	vertical-align: middle;
+}
+/*\*//*/
+.wraptocenter {
+    display: block;
+}
+.wraptocenter span {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+/
+*/
+
+
+.notFound {
+	margin: 20px 0 0 0;
+	width: 964px;
+	background: #fff;
+	padding: 20px 20px 10px 20px;
+}
+.rxwrap {
+	width: 677px;
+	background: #fff;
+	padding: 0px 0px 0px 0px;
+	margin: 20px auto 0 auto;
+}
+/*.rxbtn {width: 272px; height: 105px; background: url(../images/layout/rxButn.jpg); float: right; margin: 7px 28px 0 0;}*/
+
+
+
+.adopt_home_banner {
+	background: transparent url('../images/adoption_banner_new.jpg') no-repeat top right;
+	height: 300px;
+	position: relative;
+	border-right: 1px solid #8b8886;
+}
+.adopt_home_banner .main_content_area {
+	padding: 20px;
+	width: 450px;
+}
+.adopt_home_banner h3 {
+	font-size: 44px;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+.adopt_home_banner p {
+	margin-bottom: 30px;
+}
+.adopted_stats {
+	position: absolute;
+	bottom: 0px;
+	background: #fd812a;
+	width: 100%;
+}
+.adopted_stats .arrow, .adopted_stats .number {
+	float: left;
+}
+.adopted_stats .arrow {
+	background: #fd812a url('../images/arrow_bg.png') no-repeat top right;
+	height: 44px;
+	padding: 0px 40px 0px 20px;
+	line-height: 44px;
+	color: #fff;
+	font-size: 16px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+.adopted_stats .number {
+	height: 44px;
+	line-height: 44px;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+.petango_care_bar {
+	background: transparent url('../images/petango_care_bar_bg.jpg') repeat-x top left;
+	height: 59px;
+	width: 1004px;
+	border: 1px solid #1d7d95;
+}
+.petango_care_bar .logo, .petango_care_bar .text, .petango_care_bar .bar {
+	float: left;
+}
+.petango_care_bar .bar {
+	width: 2px;
+	height: 80%;
+	margin: 5px 10px 5px 5px;
+	background: transparent url('../images/petango_care_bar_bar.png') repeat-y top left;
+}
+.petango_care_bar .logo {
+	margin: 5px 20px 0px 10px;
+}
+.petango_care_bar .text {
+	line-height: 59px;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+}
+.petango_care_bar .text h3 {
+	font-size: 25px !important;
+}
+.petango_care_bar .button {
+	float: right;
+	margin: 12px 10px 0px 20px;
+}
+.adopt_text_block p {
+	margin: 0px;
+	padding: 0px;
+}
+.search {
+	/*
+	border: 1px solid #785f3e;
+	margin-top: 0px;
+	-webkit-box-shadow: 0px 7px 9px rgba(50, 50, 50, 0.53);
+	-moz-box-shadow: 0px 7px 9px rgba(50, 50, 50, 0.53);
+	box-shadow: 0px 7px 9px rgba(50, 50, 50, 0.53);
+	border-radius: 0px 0px 8px 8px;
+	-moz-border-radius: 0px 0px 8px 8px;
+	-webkit-border-radius: 0px 0px 8px 8px;
+	background: #8f8882 url('../images/search_bg.jpg') repeat-x top left;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	*/
+	margin: 10px 0 10px 0;
+	padding: 5px 20px 10px;
+	float: left;
+	
+}
+.search input, .search select {
+	background-color: #fff;
+	border: 1px solid #888;
+}
+.search-title {
+	font: 16px "museo-1", "museo-2", serif;
+	font-weight: 900;
+}
+.search-advanced {
+	margin-top: -8px !important;
+	margin-bottom: 0px !important;
+}
+.search-advanced a:hover, .search-advanced a {
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+}
+.small_banners .small_banner {
+	float: left;
+	background: #d4d2d0 url('../images/small_banner_bg.jpg') repeat-x top left;
+	border: 1px solid #b15f16;
+	width: 226px;
+	height: 200px;
+	margin: 0 18px 20px 0;
+	overflow: hidden;
+}
+.small_banners .last {
+	margin: 0 0 20px 0;
+}
+.small_banners .larger {
+	width: 510px;
+}
+.small_banners .blog_post {
+	padding: 5px;
+}
+.small_banners .blog_post .blog_entry .blog_text {
+	font-size: 10px;
+	line-height: 12px;
+}
+.small_banners .blog_post .blog_entry {
+	margin-bottom: 10px;
+}
+.small_banners .blog_post h9 {
+	font-size: 16px;
+}
+.small_banners .blog_post .meta {
+	clear: both;
+	padding: 0px;
+}
+.title1 {
+	background: transparent url('../images/small_sidebar_header.jpg') repeat-x top left;
+	border: 1px solid #7d7b79;
+	color: #4e2a01;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+	padding: 5px;
+	font-weight: bold;
+}
+.adopt_text_block {
+	padding: 0px 10px;
+}
+.adopt_text_block p {
+	margin: 5px 0px;
+}
+.sideAd {
+	visibility: hidden !important;
+	display: none !important;
+}
+#sideAd {
+	visibility: hidden;
+	display: none;
+}
+.list-header .tagline {
+    color: #fff !important;
+}
+.list-header a:hover {
+	background: none !important;	
+}
+h3.dark {
+	background: url('../images/2015/title_bg.jpg') repeat-x top right #38bde0;	
+}
+a.btn {
+	font-size: 16px;	
+}
+.wrap-footer .right-side {
+	float: right;
+}
+
+/* PetPoint Data*/
+
+.petangoText_PP h1 { font-size: 20pt; color: black; font-weight: initial; }
+
+.petangoText_PP h2 { font-size: 18pt; color: black; font-weight: initial; }
+
+.petangoText_PP h3 { font-size: 15pt; color: black; font-weight: initial; }
+
+.petangoText_PP h4 { font-size: 12pt; color: black; font-weight: initial; }
+
+.petangoText_PP h5 { font-size: 10pt; color: black; font-weight: initial; }
+
+.petangoText_PP h6 { font-size: 8pt; color: black; font-weight: initial; }
+
+.petangoText_PP p { margin: 0px; }
+
+.petangoText_PP ol {
+    list-style: decimal;
+}
